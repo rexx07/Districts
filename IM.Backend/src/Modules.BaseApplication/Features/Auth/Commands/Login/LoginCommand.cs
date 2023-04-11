@@ -1,10 +1,10 @@
-﻿using Application.Features.Auth.Rules;
+﻿using Application.Dtos;
+using Application.Features.Auth.Rules;
 using Application.Services.AuthenticatorService;
 using Application.Services.AuthService;
 using Application.Services.UserService;
 using Core.Domain.Entities.Security;
 using Core.Domain.Enums;
-using Core.Infrastructure.Dtos;
 using Core.Infrastructure.Security.JWT;
 using MediatR;
 

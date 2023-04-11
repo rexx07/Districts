@@ -1,4 +1,4 @@
-﻿namespace Core.Infrastructure.Dtos;
+﻿namespace Application.Dtos;
 
 public class UserForRegisterDto : IDto
 {

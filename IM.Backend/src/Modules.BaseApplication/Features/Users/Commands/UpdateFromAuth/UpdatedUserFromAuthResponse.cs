@@ -1,4 +1,4 @@
-﻿using Core.Infrastructure.Dtos;
+﻿using Application.Dtos;
 using Core.Infrastructure.Security.JWT;
 
 namespace Application.Features.Users.Commands.UpdateFromAuth;

@@ -16,15 +16,10 @@ public sealed class AircraftBusinessRules: BaseBusinessRules
     public AircraftBusinessRules(IAirRepositoryManager repository) =>
         _repository = repository;
 
-    async void AircraftExists(CreateAircraftCommand command)
+    public async void AircraftNotExists(CreateAircraftCommand command)
     {
         Aircraft? entity = await _repository.Aircraft.GetAsync(predicate: a => a.Model == command.Model);
         if (entity is not null)
             throw new BusinessException(AirMessages.AircraftExists);
-    }
-
-    public async void Check(CreateAircraftCommand command)
-    {
-        AircraftExists(command);
     }
 }

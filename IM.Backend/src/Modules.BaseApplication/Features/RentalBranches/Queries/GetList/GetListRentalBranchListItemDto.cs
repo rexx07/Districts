@@ -1,5 +1,5 @@
+using Application.Dtos;
 using Core.Domain.Enums;
-using Core.Infrastructure.Dtos;
 
 namespace Application.Features.RentalBranches.Queries.GetList;
 

@@ -1,5 +1,6 @@
-﻿using Core.Domain.Enums;
+﻿using Application.Dtos;
+using Core.Domain.Enums;
 
 namespace Modules.AirTransport.Dtos;
 
-public record SeatResponseDto(long Id, string SeatNumber, SeatType Type, SeatClass Class, long FlightId);
+public record SeatResponseDto(long Id, string SeatNumber, SeatType Type, SeatClass Class, long FlightId): IDto;

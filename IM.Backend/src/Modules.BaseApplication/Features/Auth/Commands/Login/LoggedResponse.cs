@@ -1,6 +1,6 @@
-﻿using Core.Domain.Entities.Security;
+﻿using Application.Dtos;
+using Core.Domain.Entities.Security;
 using Core.Domain.Enums;
-using Core.Infrastructure.Dtos;
 using Core.Infrastructure.Security.JWT;
 
 namespace Application.Features.Auth.Commands.Login;

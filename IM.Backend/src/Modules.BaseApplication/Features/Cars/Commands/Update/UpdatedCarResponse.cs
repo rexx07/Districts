@@ -1,5 +1,5 @@
-﻿using Core.Domain.Enums;
-using Core.Infrastructure.Dtos;
+﻿using Application.Dtos;
+using Core.Domain.Enums;
 
 namespace Application.Features.Cars.Commands.Update;
 
