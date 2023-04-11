@@ -1,5 +1,5 @@
-﻿using Core.Domain.Entities.Security;
-using Core.Infrastructure.Dtos;
+﻿using Application.Dtos;
+using Core.Domain.Entities.Security;
 using Core.Infrastructure.Security.JWT;
 
 namespace Application.Features.Auth.Commands.RefleshToken;

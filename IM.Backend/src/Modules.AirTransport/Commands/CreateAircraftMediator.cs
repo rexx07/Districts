@@ -35,7 +35,7 @@ public sealed class CreateAircraftHandler : IRequestHandler<CreateAircraftComman
 
     public async Task<AircraftResponseDto> Handle(CreateAircraftCommand command, CancellationToken cancellationToken)
     {
-        _aircraftBusinessRules.Check(command);
+        _aircraftBusinessRules.AircraftNotExists(command);
         
         Aircraft aircraftEntity = Aircraft.Create(command.Id, command.Name, command.Model, command.ManufacturingYear);
         Aircraft newAircraft = await _aircraftRepositoryManager.Aircraft.AddAsync(aircraftEntity, cancellationToken);
@@ -49,6 +49,7 @@ public sealed class CreateAircraftCommandValidator: AbstractValidator<CreateAirc
     public CreateAircraftCommandValidator(CreateAircraftCommand command)
     {
         Guard.Against.Null(command, parameterName: nameof(command));
+        
         RuleFor(x => x.Model).NotEmpty().WithMessage("Model is required");
         RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required");
         RuleFor(x => x.ManufacturingYear).NotEmpty().WithMessage("ManufacturingYear is required");

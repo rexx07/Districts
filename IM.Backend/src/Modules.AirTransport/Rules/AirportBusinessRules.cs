@@ -14,16 +14,10 @@ public sealed class AirportBusinessRules: BaseBusinessRules
     public AirportBusinessRules(IAirRepositoryManager repository) =>
         _repository = repository;
 
-    async void AirportExists(CreateAirportCommand command)
+    public async void AirportNotExists(CreateAirportCommand command)
     {
-        if (command == null) throw new ArgumentNullException(nameof(command));
         Airport? entity = await _repository.Airport.GetAsync(predicate: a => a.Code == command.Code);
         if (entity is not null)
             throw new BusinessException(AirMessages.AirportExists);
-    }
-
-    public void Check(CreateAirportCommand command)
-    {
-        AirportExists(command);
     }
 }

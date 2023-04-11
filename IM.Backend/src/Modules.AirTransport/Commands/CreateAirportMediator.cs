@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using Ardalis.GuardClauses;
+using AutoMapper;
 using Core.CrossCuttingConcerns.IdsGenerator;
 using Core.Domain.Entities.Air;
 using Core.Infrastructure.CQRS;
@@ -31,7 +32,7 @@ public sealed class CreateAirportHandler : IRequestHandler<CreateAirportCommand,
 
     public async Task<AirportResponseDto> Handle(CreateAirportCommand command, CancellationToken cancellationToken)
     {
-        _airportBusinessRules.Check(command);
+        _airportBusinessRules.AirportNotExists(command);
 
         Airport? airportEntity = Airport.Create(command.Id, command.Name, command.Code, command.Address);
         Airport newAirport = await _airRepositoryManager.Airport.AddAsync(airportEntity, cancellationToken);
@@ -41,8 +42,10 @@ public sealed class CreateAirportHandler : IRequestHandler<CreateAirportCommand,
 
     public sealed class CreateAirportCommandValidator : AbstractValidator<CreateAirportCommand>
     {
-        public CreateAirportCommandValidator()
+        public CreateAirportCommandValidator(CreateAirportCommand command)
         {
+            Guard.Against.Null(command, parameterName: nameof(command));
+            
             RuleFor(x => x.Code).NotEmpty().WithMessage("Code is required");
             RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required");
             RuleFor(x => x.Address).NotEmpty().WithMessage("Address is required");

@@ -1,4 +1,4 @@
-using Core.Infrastructure.Dtos;
+using Application.Dtos;
 
 namespace Application.Features.IndividualCustomers.Queries.GetByCustomerId;
 

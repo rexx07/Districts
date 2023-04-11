@@ -1,4 +1,4 @@
-using Core.Infrastructure.Dtos;
+using Application.Dtos;
 
 namespace Application.Features.OperationClaims.Commands.Update;
 
