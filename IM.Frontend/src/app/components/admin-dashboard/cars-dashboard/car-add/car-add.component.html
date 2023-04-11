@@ -1,0 +1,63 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Araba Ekle</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="carAddForm">
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="brandId">Marka Seç:</label>
+            <div class="col-sm-10">
+              <select class="form-control" formControlName="brandId">
+                <option *ngFor="let brand of brands" [ngValue]="brand.brandId">{{brand.brandName}} </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="colorId">Renk Seç:</label>
+            <div class="col-sm-10">
+              <select class="form-control" formControlName="colorId" selected="cars">
+                <option *ngFor="let color of colors" [ngValue]="color.colorId">{{color.colorName}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="carName">Araba İsmi:</label>
+            <div class="col-sm-10">
+              <input class="form-control" formControlName="carName" id="carName" type="text"/>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="modelYear">Model Yıl:</label>
+            <div class="col-sm-10">
+              <input class="form-control" formControlName="modelYear" id="modelYear" type="number"/>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="dailyPrice">Günlük Fiyat:</label>
+            <div class="col-sm-10">
+              <input class="form-control" formControlName="dailyPrice" id="dailyPrice" type="number"/>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="description">Açıklama:</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" formControlName="description" id="description" type=""></textarea>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="card-footer">
+        <button (click)="addCar()" class="btn btn-success w-100">Ekle</button>
+      </div>
+    </div>
+  </div>
+</div>

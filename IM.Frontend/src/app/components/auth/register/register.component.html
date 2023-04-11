@@ -1,0 +1,48 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown zero-raduis">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <!-- <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" /> -->
+      <h2 class="my-5">Kayıt Oluştur</h2>
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="registerForm">
+
+      <input class="fadeIn second zero-raduis" formControlName="firstName" id="firstName" name="firstName" placeholder="Ad"
+             type="text">
+      <div *ngIf="submitted && f['firstName'].errors" class="invalid-feedback">
+        <div *ngIf="f['firstName'].errors['required']">Ad kısmı boş olamaz</div>
+      </div>
+      <input class="fadeIn second zero-raduis" formControlName="lastName" id="lastName" name="lastName" placeholder="Soyad"
+             type="text">
+      <div *ngIf="submitted && f['lastName'].errors" class="invalid-feedback">
+        <div *ngIf="f['lastName'].errors['required']">Soyad kısmı boş olamaz</div>
+      </div>
+      <input class="fadeIn second zero-raduis" formControlName="email" id="email" name="email" placeholder="info@example.com"
+             type="email">
+      <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+        <div *ngIf="f['email'].errors['required']">E-posta kısmı boş olamaz</div>
+      </div>
+      <input class="fadeIn third zero-raduis" formControlName="password" id="password" name="register" placeholder="password"
+             type="password">
+      <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+        <div *ngIf="f['password'].errors['required']">Şifre kısmı boş olamaz</div>
+        <div *ngIf="f['password'].errors['minlength']">Password must be at least 6 characters</div>
+      </div>
+      <div id="formFooter">
+
+      </div>
+      <input (click)="register()" class="fadeIn fourth zero-raduis" type="submit" value="Kayıt Ol">
+      <h2>Hesabınız Varmı?</h2>
+      <input class="fadeIn fourth zero-raduis pc" routerLink="/login" type="button" value="Giriş Yap">
+    </form>
+  </div>
+</div>

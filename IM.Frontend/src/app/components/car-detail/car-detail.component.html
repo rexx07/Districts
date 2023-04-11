@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="carousel slide mt-5" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+          <button *ngFor="let image of carImages;let i = index" [class]="getButtonClass(image)"
+                  aria-current="true" aria-label="Slide 1"
+                  attr.data-bs-slide-to="{{i}}" data-bs-target="#carouselExampleIndicators" type="button"></button>
+        </div>
+        <div class="carousel-inner">
+          <div *ngFor="let image of carImages" [class]="getCurrentImageClass(image)">
+            <img alt="Image" class="d-block w-100" height="300" src="{{imageUrl}}{{image.imagePath}}">
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <table *ngIf="dataLoaded==true" class="table mt-5">
+        <thead class="table-dark">
+        <tr>
+          <th>Marka</th>
+          <th>Renk</th>
+          <th>Model</th>
+          <th>Günlük Fiyat</th>
+          <th>Açıklama</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let car of cars">
+          <td>{{car.brandName}}</td>
+          <td>{{car.colorName}}</td>
+          <td>{{car.modelYear}}</td>
+          <td>{{car.dailyPrice}}</td>
+          <td>{{car.description}}</td>
+          <button class="btn btn-outline-dark ms-5" routerLink="/car/rental/{{car.carId}}" type="button">Kirala</button>
+
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>

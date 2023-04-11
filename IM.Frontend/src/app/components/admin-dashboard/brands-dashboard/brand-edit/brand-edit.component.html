@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header"><h5 class="title font-weight-bold">Marka</h5></div>
+
+  <div class="card-body">
+
+    <form [formGroup]="brandEditForm">
+
+      <div class="row">
+        <div class="mb-3">
+          <label for="BrandName">Marka</label>
+          <div class="form-group">
+            <input class="form-control" formControlName="brandName" id="brandName" type="text"
+                   value="{{brand?.brandName}}"/>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="card-footer">
+    <button (click)="deleteBrand()" [routerLink]="['/admin/brands']" class="btn btn-fill btn-danger"> Sil</button>
+    <button (click)="updateBrand()" [routerLink]="['/admin/brands']" class="btn btn-fill btn-primary"> Güncelle</button>
+  </div>
+
+</div>

@@ -1,0 +1,34 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown zero-radius">
+  <div id="formContent">
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h2 class="my-5">OTURUM AÇ</h2>
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm">
+      <input class="fadeIn second zero-radius" formControlName="email" id="email" name="email" placeholder="name@example.com"
+             type="email">
+      <input class="fadeIn third zero-radius" formControlName="password" id="password" name="login" placeholder="password"
+             type="password">
+      <div id="formFooter">
+        <a class="underlineHover">Parolanızı mı unuttunuz?</a>
+      </div>
+      <input (click)="login()" class="fadeIn fourth zero-radius" routerLinkActive="router-link-active" type="submit"
+             value="Giriş Yap">
+      <h2>Hesabınız yokmu ?</h2>
+      <input class="fadeIn fourth zero-radius pc" routerLink="/register" type="button" value="Kayıt Ol">
+    </form>
+
+  </div>
+</div>
+
+
+
+
+

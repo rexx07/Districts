@@ -1,0 +1,26 @@
+<div class="container">
+
+  <table class="table ">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Renkler</th>
+      <th>
+        <button class="btn btn-outline-dark" routerLink="add" type="button">+ Ekle</button>
+      </th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let color of colors">
+      <td>{{color.colorId}}</td>
+      <td>{{color.colorName}}</td>
+      <td>
+        <button class="btn btn-outline-info mx-2" routerLink="edit/{{color.colorId}}" type="button">Güncelle</button>
+      </td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>

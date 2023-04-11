@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Application</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Features\Cars\Rules\**" />
+		<EmbeddedResource Remove="Features\Cars\Rules\**" />
+		<None Remove="Features\Cars\Rules\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="Features\Cars\Rules\CarBusinessRules.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Services\AuthService\" />
+		<Folder Include="Services\CarService\" />
+		<Folder Include="Services\ModelService\" />
+		<Folder Include="Services\InvoiceService\" />
+		<Folder Include="Services\CustomerService\" />
+		<Folder Include="Services\RentalService\" />
+		<Folder Include="Services\UserService\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="CloudinaryDotNet" Version="1.20.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
+	  <ProjectReference Include="..\Core.Infrastructure\Core.Infrastructure.csproj" />
+	</ItemGroup>
+
+</Project>

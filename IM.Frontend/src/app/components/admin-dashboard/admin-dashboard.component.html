@@ -1,0 +1,18 @@
+<div class="container-fluid pt-4">
+  <div class="row">
+    <div class="col-3">
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action " routerLink="./"
+           style="background-color: #0186a7; color: white;">Admin</a>
+        <a class="list-group-item list-group-item-action" routerLink="cars" routerLinkActive="active">Arabalar</a>
+        <a class="list-group-item list-group-item-action" routerLink="colors" routerLinkActive="active">Renkler</a>
+        <a class="list-group-item list-group-item-action" routerLink="brands" routerLinkActive="active"> Markalar</a>
+      </div>
+
+
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

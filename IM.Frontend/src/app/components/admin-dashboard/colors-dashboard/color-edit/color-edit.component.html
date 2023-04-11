@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-header"><h5 class="title font-weight-bold">Renk</h5></div>
+
+  <div class="card-body">
+
+    <form [formGroup]="colorEditForm">
+
+      <div class="row">
+        <div class="mb-3">
+          <label for="ColorName">Renk</label>
+          <div class="form-group">
+            <input class="form-control" formControlName="colorName" id="colorName" type="text"
+                   value="{{color?.colorName}}"/>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+  <div class="card-footer">
+    <button (click)="deleteColor()" [routerLink]="['/admin/colors']" class="btn btn-fill btn-danger"> Sil</button>
+    <button (click)="updateColor()" [routerLink]="['/admin/colors']" class="btn btn-fill btn-primary">Güncelle</button>
+  </div>
+
+</div>

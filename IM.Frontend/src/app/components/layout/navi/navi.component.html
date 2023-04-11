@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg  ">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="color: white;">
+      RentA-Car</a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+        <span class="menu-hammur" style=" color: #f22324;">
+          <i class="bi bi-list"></i>
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="color: white;">
+          <a aria-current="page" class="nav-link " href="#" style="color: white;">Ana Sayfa</a>
+        </li>
+        <li class="nav-item" style="color: white;">
+          <a aria-current="page" class="nav-link " href="#" routerLink="/cars" style="color: white;">Araçlar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Hizmetler</a>
+        </li>
+
+        <li *ngIf="userRol=='admin'" class="nav-item">
+          <a class="nav-link" href="#" routerLink="admin" style="color: white;">Admin Panel</a>
+        </li>
+
+      </ul>
+
+      <div *ngIf="!isAuthenticated()">
+        <button aria-expanded="false" class="btn auth " id="auth" routerLink="/login" type="button">
+
+          Giriş
+        </button>
+        <button aria-expanded="false" class="btn  auth" id="auth" routerLink="/register" type="button">
+
+          Kaydol
+        </button>
+      </div>
+
+      <div *ngIf="isAuthenticated()" class="btn-group">
+        <button aria-expanded="false" class="btn  dropdown-toggle auth" data-bs-toggle="dropdown" id="auth"
+                type="button">
+          <i class="bi bi-person-circle"></i> {{lastName + " " + firstName}}
+
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end  dropdown-menu-lg-start">
+          <li>
+            <button class="dropdown-item" routerLink="user" type="button">Profil</button>
+          </li>
+          <li>
+            <button (click)="logout()" class="dropdown-item" type="button"><i class="bi bi-box-arrow-right"></i> Çıkış
+            </button>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+</nav>

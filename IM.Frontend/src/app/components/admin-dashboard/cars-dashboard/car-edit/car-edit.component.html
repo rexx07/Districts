@@ -1,0 +1,88 @@
+<div class="container mt-3 content">
+  <div class="col-lg">
+    <div class="card">
+      <div class="card-header">
+        <h4>Arabayı Güncelle</h4>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="carUpdateForm">
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <label class="form-label" for="carName">Araba İsmi</label>
+            </div>
+            <div class="col-lg">
+              <input class="form-control" formControlName="carName" id="carName" placeholder="Araba ismi"
+                     type="string"/>
+
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <label class="form-label" for="brandSelect">Marka:</label>
+            </div>
+            <div class="col-lg">
+              <select class="form-select" formControlName="brandId" id="brandSelect" size="3">
+                <option selected>Marka seçin</option>
+                <option *ngFor="let brand of brands" value="{{brand.brandId}}">{{brand.brandName}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <label class="form-label" for="colorSelect">Renk:</label>
+            </div>
+            <div class="col-lg">
+              <select class="form-select" formControlName="colorId" id="colorSelect" size="3">
+                <option selected>Renk seçin</option>
+                <option *ngFor="let color of colors" value="{{color.colorId}}">{{color.colorName}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <label class="form-label" for="colorSelect">Model Yılı:</label>
+            </div>
+            <div class="col-lg">
+              <select class="form-select" formControlName="modelYear" id="modelYearSelect" size="3">
+                <option selected>Model seçin</option>
+                <option *ngFor="let year of modelYearList" value="{{year}}">{{year}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <label class="form-label" for="dailyPriceInput">Günlük Fiyat:</label>
+            </div>
+            <div class="col-lg">
+              <input class="form-control" formControlName="dailyPrice" id="dailyPriceInput" placeholder="e.g. 250"
+                     type="number"/>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <label class="form-label" for="descriptionInput">Açıklama:</label>
+            </div>
+            <div class="col-lg">
+                          <textarea [ngClass]="{ 'is-invalid': carFormControls['description'].touched && carFormControls['description'].errors }" class="form-control" formControlName="description" id="descriptionInput"
+                                    placeholder="Açıklama..."
+                                    rows="3">
+
+
+                          </textarea>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="d-grid gap-2">
+          <button (click)="updateCar()" class="btn btn-warning" type="button">Güncelle</button>
+          <button (click)="deleteCar()" class="btn btn-danger" type="button">Sil</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

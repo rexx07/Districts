@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 ">
+      <app-brand></app-brand>
+      <app-color></app-color>
+    </div>
+    <div class="col-md-9">
+      <div class="mb-3">
+
+        <label class="form-label" for="carFilter"></label>
+        <input [(ngModel)]="carFilter" class="form-control" id="carFilter" placeholder="arama ifadesi giriniz"
+               type="text">
+      </div>
+
+      <app-car-filter></app-car-filter>
+      <div *ngIf="dataLoaded==true" class="row">
+        <div *ngFor="let car of cars |carFilter:carFilter" class="card m-2 " style="width: 267px; ">
+          <img alt="{{imageUrl}}{{car.imagePath}}" class="card-img-top" height="200" src="{{imageUrl}}{{car.imagePath}}"
+               width="320">
+
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-center">{{car.carName}}</h5>
+            <p class="card-text d-flex justify-content-center">{{car.description}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Marka: {{car.brandName}}</li>
+            <li class="list-group-item">Renk: {{car.colorName}}</li>
+            <li class="list-group-item">Model: {{car.modelYear}}</li>
+            <li class="list-group-item">Fiyat: {{car.dailyPrice }}</li>
+          </ul>
+          <div class="card-body">
+            <section style="float:left">
+              <button class="btn btn-outline-dark" routerLink="/car/details/{{car.carId }}" type="button">Detay</button>
+            </section>
+            <section style="float: right">
+              <button class="btn btn-outline-dark" routerLink="/car/rental/{{car.carId}}" type="button">Kirala</button>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>
