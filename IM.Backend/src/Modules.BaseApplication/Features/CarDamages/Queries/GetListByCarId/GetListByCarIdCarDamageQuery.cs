@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.CarDamages.Queries.GetListByCarId;
+namespace Modules.BaseApplication.Features.CarDamages.Queries.GetListByCarId;
 
 public class GetListByCarIdCarDamageQuery : IRequest<GetListResponse<GetListByCarIdCarDamageListItemDto>>
 {
@@ -29,7 +28,7 @@ public class GetListByCarIdCarDamageQuery : IRequest<GetListResponse<GetListByCa
             CancellationToken cancellationToken
         )
         {
-            IPaginate<CarDamage> carDamages = await _carDamageRepository.GetListAsync(
+            IPaginate<VehicleDamage> carDamages = await _carDamageRepository.GetListAsync(
                                                   predicate: c => c.CarId == request.CarId,
                                                   include: c =>
                                                       c.Include(c => c.Car).Include(c => c.Car.Model)

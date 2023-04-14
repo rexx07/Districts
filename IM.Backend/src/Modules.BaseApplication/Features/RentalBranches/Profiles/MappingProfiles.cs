@@ -1,13 +1,13 @@
-using Application.Features.RentalBranches.Commands.Create;
-using Application.Features.RentalBranches.Commands.Delete;
-using Application.Features.RentalBranches.Commands.Update;
-using Application.Features.RentalBranches.Queries.GetById;
-using Application.Features.RentalBranches.Queries.GetList;
 using AutoMapper;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.RentalBranches.Commands.Create;
+using Modules.BaseApplication.Features.RentalBranches.Commands.Delete;
+using Modules.BaseApplication.Features.RentalBranches.Commands.Update;
+using Modules.BaseApplication.Features.RentalBranches.Queries.GetById;
+using Modules.BaseApplication.Features.RentalBranches.Queries.GetList;
 
-namespace Application.Features.RentalBranches.Profiles;
+namespace Modules.BaseApplication.Features.RentalBranches.Profiles;
 
 public class MappingProfiles : Profile
 {

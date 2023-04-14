@@ -1,9 +1,9 @@
-using Application.Features.CorporateCustomers.Rules;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.CorporateCustomers.Rules;
 
-namespace Application.Features.CorporateCustomers.Queries.GetById;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Queries.GetById;
 
 public class GetByIdCorporateCustomerQuery : IRequest<GetByIdCorporateCustomerResponse>
 {

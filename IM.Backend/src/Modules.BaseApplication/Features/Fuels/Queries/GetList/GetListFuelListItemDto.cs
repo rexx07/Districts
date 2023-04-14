@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Fuels.Queries.GetList;
+namespace Modules.BaseApplication.Features.Fuels.Queries.GetList;
 
 public class GetListFuelListItemDto : IDto
 {

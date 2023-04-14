@@ -1,12 +1,12 @@
-using Application.Features.AdditionalServices.Constants;
-using Application.Features.AdditionalServices.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.AdditionalServices.Constants.AdditionalServicesOperationClaims;
+using Modules.BaseApplication.Features.AdditionalServices.Constants;
+using Modules.BaseApplication.Features.AdditionalServices.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.AdditionalServices.Constants.AdditionalServicesOperationClaims;
 
-namespace Application.Features.AdditionalServices.Commands.Update;
+namespace Modules.BaseApplication.Features.AdditionalServices.Commands.Update;
 
 public class UpdateAdditionalServiceCommand : IRequest<UpdatedAdditionalServiceResponse>, ISecuredRequest
 {

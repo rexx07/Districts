@@ -1,26 +1,4 @@
 ﻿using System.Reflection;
-using Application.Adapters.FakeFindeksService;
-using Application.Adapters.FakePOSService;
-using Application.Adapters.ImageService;
-using Application.Pipelines.Authorization;
-using Application.Pipelines.Caching;
-using Application.Pipelines.Logging;
-using Application.Pipelines.Transaction;
-using Application.Pipelines.Validation;
-using Application.Services.AdditionalServiceService;
-using Application.Services.AuthenticatorService;
-using Application.Services.AuthService;
-using Application.Services.CarService;
-using Application.Services.CustomerService;
-using Application.Services.FindeksCreditRateService;
-using Application.Services.FindeksService;
-using Application.Services.ImageService;
-using Application.Services.InvoiceService;
-using Application.Services.ModelService;
-using Application.Services.POSService;
-using Application.Services.RentalService;
-using Application.Services.RentalsIAdditionalServiceService;
-using Application.Services.UserService;
 using Core.CrossCuttingConcerns.Logging.Serilog;
 using Core.CrossCuttingConcerns.Logging.Serilog.Logger;
 using Core.Infrastructure.ElasticSearch;
@@ -29,8 +7,30 @@ using Core.Infrastructure.Mailing.MailKitImplementations;
 using Core.Infrastructure.Rules;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using Modules.BaseApplication.Adapters.FakeFindeksService;
+using Modules.BaseApplication.Adapters.FakePOSService;
+using Modules.BaseApplication.Adapters.ImageService;
+using Modules.BaseApplication.Pipelines.Authorization;
+using Modules.BaseApplication.Pipelines.Caching;
+using Modules.BaseApplication.Pipelines.Logging;
+using Modules.BaseApplication.Pipelines.Transaction;
+using Modules.BaseApplication.Pipelines.Validation;
+using Modules.BaseApplication.Services.AdditionalServiceService;
+using Modules.BaseApplication.Services.AuthenticatorService;
+using Modules.BaseApplication.Services.AuthService;
+using Modules.BaseApplication.Services.CarService;
+using Modules.BaseApplication.Services.CustomerService;
+using Modules.BaseApplication.Services.FindeksCreditRateService;
+using Modules.BaseApplication.Services.FindeksService;
+using Modules.BaseApplication.Services.ImageService;
+using Modules.BaseApplication.Services.InvoiceService;
+using Modules.BaseApplication.Services.ModelService;
+using Modules.BaseApplication.Services.POSService;
+using Modules.BaseApplication.Services.RentalService;
+using Modules.BaseApplication.Services.RentalsIAdditionalServiceService;
+using Modules.BaseApplication.Services.UserService;
 
-namespace Application;
+namespace Modules.BaseApplication;
 
 public static class ApplicationServiceRegistration
 {

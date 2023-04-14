@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Brands.Queries.GetById;
+﻿namespace Modules.BaseApplication.Features.Brands.Queries.GetById;
 
 public class GetByIdBrandResponse
 {

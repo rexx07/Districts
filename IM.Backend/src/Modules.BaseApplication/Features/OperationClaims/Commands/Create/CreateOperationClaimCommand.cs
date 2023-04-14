@@ -1,11 +1,11 @@
-using Application.Features.OperationClaims.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using MediatR;
-using static Application.Features.OperationClaims.Constants.OperationClaimsOperationClaims;
+using Modules.BaseApplication.Features.OperationClaims.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.OperationClaims.Constants.OperationClaimsOperationClaims;
 
-namespace Application.Features.OperationClaims.Commands.Create;
+namespace Modules.BaseApplication.Features.OperationClaims.Commands.Create;
 
 public class CreateOperationClaimCommand : IRequest<CreatedOperationClaimResponse>, ISecuredRequest
 {

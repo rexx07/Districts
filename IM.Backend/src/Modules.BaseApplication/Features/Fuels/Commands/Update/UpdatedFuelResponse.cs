@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Fuels.Commands.Update;
+namespace Modules.BaseApplication.Features.Fuels.Commands.Update;
 
 public class UpdatedFuelResponse : IDto
 {

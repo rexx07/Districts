@@ -1,10 +1,10 @@
-﻿using Application.Features.Rentals.Constants;
-using Core.CrossCuttingConcerns.Exceptions.Types;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Rentals.Constants;
 
-namespace Application.Features.Rentals.Rules;
+namespace Modules.BaseApplication.Features.Rentals.Rules;
 
 public class RentalBusinessRules : BaseBusinessRules
 {

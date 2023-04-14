@@ -1,4 +1,4 @@
-﻿namespace Application.Features.CorporateCustomers.Constants;
+﻿namespace Modules.BaseApplication.Features.CorporateCustomers.Constants;
 
 public static class CorporateCustomersOperationClaims
 {

@@ -1,20 +1,20 @@
-﻿using Application.Features.Rentals.Rules;
-using Application.Pipelines.Logging;
-using Application.Services.AdditionalServiceService;
-using Application.Services.CarService;
-using Application.Services.FindeksCreditRateService;
-using Application.Services.InvoiceService;
-using Application.Services.ModelService;
-using Application.Services.POSService;
-using Application.Services.RentalsIAdditionalServiceService;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Mailing;
 using MediatR;
 using MimeKit;
+using Modules.BaseApplication.Features.Rentals.Rules;
+using Modules.BaseApplication.Pipelines.Logging;
+using Modules.BaseApplication.Services.AdditionalServiceService;
+using Modules.BaseApplication.Services.CarService;
+using Modules.BaseApplication.Services.FindeksCreditRateService;
+using Modules.BaseApplication.Services.InvoiceService;
+using Modules.BaseApplication.Services.ModelService;
+using Modules.BaseApplication.Services.POSService;
+using Modules.BaseApplication.Services.RentalsIAdditionalServiceService;
 
-namespace Application.Features.Rentals.Commands.Create;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Create;
 
 public class CreateRentalCommand : IRequest<CreatedRentalResponse>, ILoggableRequest
 {
@@ -75,7 +75,7 @@ public class CreateRentalCommand : IRequest<CreatedRentalResponse>, ILoggableReq
                     request.CustomerId
                 );
 
-            Car? carToBeRented = await _carService.GetAvailableCarToRent(
+            Vehicle? carToBeRented = await _carService.GetAvailableCarToRent(
                                      request.ModelId,
                                      request.RentStartRentalBranchId,
                                      request.RentStartDate,

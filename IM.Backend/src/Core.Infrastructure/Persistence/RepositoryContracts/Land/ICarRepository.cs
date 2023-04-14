@@ -3,6 +3,6 @@ using Core.Infrastructure.Persistence.Repositories;
 
 namespace Core.Infrastructure.Persistence.RepositoryContracts.Land;
 
-public interface ICarRepository : IAsyncRepository<Car>, IRepository<Car>
+public interface ICarRepository : IAsyncRepository<Vehicle>, IRepository<Vehicle>
 {
 }

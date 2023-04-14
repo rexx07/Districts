@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Transmissions.Constants;
+﻿namespace Modules.BaseApplication.Features.Transmissions.Constants;
 
 public static class TransmissionsOperationClaims
 {

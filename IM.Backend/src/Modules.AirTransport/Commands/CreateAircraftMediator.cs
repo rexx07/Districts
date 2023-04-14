@@ -18,7 +18,7 @@ public sealed record CreateAircraftCommand(string Name, string Model, int Manufa
     public long Id { get;} = SnowFlakIdGenerator.NewId();
 }
 
-public sealed class CreateAircraftHandler : IRequestHandler<CreateAircraftCommand, AircraftResponseDto>
+public sealed class CreateAircraftHandler : ICommandHandler<CreateAircraftCommand, AircraftResponseDto>
 {
     private readonly IAirRepositoryManager _aircraftRepositoryManager;
     private readonly AircraftBusinessRules _aircraftBusinessRules;

@@ -1,7 +1,7 @@
-﻿using Application.Services.POSService;
-using Core.CrossCuttingConcerns.Exceptions.Types;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
+using Modules.BaseApplication.Services.POSService;
 
-namespace Application.Adapters.FakePOSService;
+namespace Modules.BaseApplication.Adapters.FakePOSService;
 
 public class FakePOSServiceAdapter : IPOSService
 {

@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Brands.Queries.GetList;
+namespace Modules.BaseApplication.Features.Brands.Queries.GetList;
 
 public class GetListBrandListItemDto : IDto
 {

@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Fuels.Constants;
+﻿namespace Modules.BaseApplication.Features.Fuels.Constants;
 
 public static class FuelsOperationClaims
 {

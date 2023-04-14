@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.FindeksCreditRates.Queries.GetByIdFindeksCreditRate;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetByIdFindeksCreditRate;
 
 public class GetByIdFindeksCreditRateResponse : IDto
 {

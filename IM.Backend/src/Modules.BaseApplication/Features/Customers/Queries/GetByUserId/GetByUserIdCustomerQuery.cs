@@ -1,9 +1,9 @@
-﻿using Application.Features.Customers.Rules;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.Customers.Rules;
 
-namespace Application.Features.Customers.Queries.GetByUserId;
+namespace Modules.BaseApplication.Features.Customers.Queries.GetByUserId;
 
 public class GetByUserIdCustomerQuery : IRequest<GetByUserIdCustomerResponse>
 {

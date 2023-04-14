@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.OperationClaims.Commands.Update;
+namespace Modules.BaseApplication.Features.OperationClaims.Commands.Update;
 
 public class UpdatedOperationClaimResponse : IDto
 {

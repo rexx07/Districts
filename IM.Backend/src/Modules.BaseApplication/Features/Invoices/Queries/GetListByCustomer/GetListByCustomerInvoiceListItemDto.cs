@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Invoices.Queries.GetListByCustomer;
+namespace Modules.BaseApplication.Features.Invoices.Queries.GetListByCustomer;
 
 public class GetListByCustomerInvoiceListItemDto : IDto
 {

@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities;
 
-namespace Application.Services.CustomerService;
+namespace Modules.BaseApplication.Services.CustomerService;
 
 public class CustomerManager : ICustomerService
 {

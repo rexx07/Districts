@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Colors.Queries.GetList;
+namespace Modules.BaseApplication.Features.Colors.Queries.GetList;
 
 public class GetListColorListItemDto : IDto
 {

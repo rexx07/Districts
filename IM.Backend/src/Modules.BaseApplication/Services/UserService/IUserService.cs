@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities.Security;
 
-namespace Application.Services.UserService;
+namespace Modules.BaseApplication.Services.UserService;
 
 public interface IUserService
 {

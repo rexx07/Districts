@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Fuels.Queries.GetList;
+namespace Modules.BaseApplication.Features.Fuels.Queries.GetList;
 
 public class GetListFuelQuery : IRequest<GetListResponse<GetListFuelListItemDto>>
 {

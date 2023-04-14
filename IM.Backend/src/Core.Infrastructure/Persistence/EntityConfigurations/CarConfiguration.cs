@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Core.Infrastructure.Persistence.EntityConfigurations;
 
-public class CarConfiguration : IEntityTypeConfiguration<Car>
+public class CarConfiguration : IEntityTypeConfiguration<Vehicle>
 {
-    public void Configure(EntityTypeBuilder<Car> builder)
+    public void Configure(EntityTypeBuilder<Vehicle> builder)
     {
         builder.ToTable("Cars").HasKey(k => k.Id);
         builder.Property(p => p.Id).HasColumnName("Id");
@@ -23,14 +23,14 @@ public class CarConfiguration : IEntityTypeConfiguration<Car>
         builder.HasOne(p => p.Model);
         builder.HasOne(c => c.RentalBranch);
 
-        Car[] carSeeds =
+        Vehicle[] carSeeds =
         {
             new(
                 id: 1,
                 colorId: 1,
                 modelId: 1,
                 rentalBranchId: 1,
-                CarState.Available,
+                VehicleState.Available,
                 kilometer: 1000,
                 modelYear: 2018,
                 plate: "07ABC07",
@@ -41,7 +41,7 @@ public class CarConfiguration : IEntityTypeConfiguration<Car>
                 colorId: 2,
                 modelId: 2,
                 rentalBranchId: 2,
-                CarState.Rented,
+                VehicleState.Rented,
                 kilometer: 1000,
                 modelYear: 2018,
                 plate: "15ABC15",

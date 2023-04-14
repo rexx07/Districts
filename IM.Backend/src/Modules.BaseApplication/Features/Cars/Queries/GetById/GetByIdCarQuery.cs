@@ -1,10 +1,9 @@
-﻿using Application.Features.Cars.Rules;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Cars.Rules;
 
-namespace Application.Features.Cars.Queries.GetById;
+namespace Modules.BaseApplication.Features.Cars.Queries.GetById;
 
 public class GetByIdCarQuery : IRequest<GetByIdCarResponse>
 {
@@ -27,7 +26,7 @@ public class GetByIdCarQuery : IRequest<GetByIdCarResponse>
         {
             await _carBusinessRules.CarIdShouldExistWhenSelected(request.Id);
 
-            Car? car = await _carRepository.GetAsync(c => c.Id == request.Id);
+            Vehicle? car = await _carRepository.GetAsync(c => c.Id == request.Id);
             GetByIdCarResponse carDto = _mapper.Map<GetByIdCarResponse>(car);
             return carDto;
         }

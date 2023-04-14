@@ -1,11 +1,10 @@
-﻿using Application.Features.Brands.Constants;
-using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Brands.Constants;
 
-namespace Application.Features.Brands.Rules;
+namespace Modules.BaseApplication.Features.Brands.Rules;
 
 public class BrandBusinessRules : BaseBusinessRules
 {

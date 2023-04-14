@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Rentals.Queries.GetList;
+namespace Modules.BaseApplication.Features.Rentals.Queries.GetList;
 
 public class GetListRentalListItemDto : IDto
 {

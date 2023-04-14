@@ -1,14 +1,13 @@
-﻿using Application.Features.Brands.Constants;
-using Application.Features.Brands.Rules;
-using Application.Pipelines.Authorization;
-using Application.Pipelines.Caching;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Brands.Constants.BrandsOperationClaims;
+using Modules.BaseApplication.Features.Brands.Constants;
+using Modules.BaseApplication.Features.Brands.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using Modules.BaseApplication.Pipelines.Caching;
+using static Modules.BaseApplication.Features.Brands.Constants.BrandsOperationClaims;
 
-namespace Application.Features.Brands.Commands.Delete;
+namespace Modules.BaseApplication.Features.Brands.Commands.Delete;
 
 public class DeleteBrandCommand : IRequest<DeletedBrandResponse>, ISecuredRequest, ICacheRemoverRequest
 {

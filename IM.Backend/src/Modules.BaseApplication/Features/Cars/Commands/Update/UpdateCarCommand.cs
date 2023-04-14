@@ -1,13 +1,12 @@
-﻿using Application.Features.Cars.Constants;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Domain.Enums;
 using MediatR;
-using static Application.Features.Cars.Constants.CarsOperationClaims;
+using Modules.BaseApplication.Features.Cars.Constants;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Cars.Constants.CarsOperationClaims;
 
-namespace Application.Features.Cars.Commands.Update;
+namespace Modules.BaseApplication.Features.Cars.Commands.Update;
 
 public class UpdateCarCommand : IRequest<UpdatedCarResponse>, ISecuredRequest
 {
@@ -15,7 +14,7 @@ public class UpdateCarCommand : IRequest<UpdatedCarResponse>, ISecuredRequest
     public int ColorId { get; set; }
     public int ModelId { get; set; }
     public int RentalBranchId { get; set; }
-    public CarState CarState { get; set; }
+    public VehicleState CarState { get; set; }
     public int Kilometer { get; set; }
     public short ModelYear { get; set; }
     public string Plate { get; set; }
@@ -37,9 +36,9 @@ public class UpdateCarCommand : IRequest<UpdatedCarResponse>, ISecuredRequest
 
         public async Task<UpdatedCarResponse> Handle(UpdateCarCommand request, CancellationToken cancellationToken)
         {
-            Car mappedCar = _mapper.Map<Car>(request);
-            Car updatedCar = await _carRepository.UpdateAsync(mappedCar);
-            UpdatedCarResponse updatedCarDto = _mapper.Map<UpdatedCarResponse>(updatedCar);
+            Vehicle mappedVehicle = _mapper.Map<Vehicle>(request);
+            Vehicle updatedVehicle = await _carRepository.UpdateAsync(mappedVehicle);
+            UpdatedCarResponse updatedCarDto = _mapper.Map<UpdatedCarResponse>(updatedVehicle);
             return updatedCarDto;
         }
     }

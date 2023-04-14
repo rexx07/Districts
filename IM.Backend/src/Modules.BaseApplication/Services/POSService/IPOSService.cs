@@ -1,4 +1,4 @@
-﻿namespace Application.Services.POSService;
+﻿namespace Modules.BaseApplication.Services.POSService;
 
 public interface IPOSService
 {

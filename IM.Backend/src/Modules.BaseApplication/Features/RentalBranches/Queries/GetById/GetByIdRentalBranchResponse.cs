@@ -1,7 +1,7 @@
-using Application.Dtos;
 using Core.Domain.Enums;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.RentalBranches.Queries.GetById;
+namespace Modules.BaseApplication.Features.RentalBranches.Queries.GetById;
 
 public class GetByIdRentalBranchResponse : IDto
 {

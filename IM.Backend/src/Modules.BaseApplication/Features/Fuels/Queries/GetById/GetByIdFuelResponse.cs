@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Fuels.Queries.GetById;
+namespace Modules.BaseApplication.Features.Fuels.Queries.GetById;
 
 public class GetByIdFuelResponse : IDto
 {

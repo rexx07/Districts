@@ -1,11 +1,11 @@
-using Application.Features.Invoices.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.Invoices.Constants.InvoicesOperationClaims;
+using Modules.BaseApplication.Features.Invoices.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Invoices.Constants.InvoicesOperationClaims;
 
-namespace Application.Features.Invoices.Commands.Create;
+namespace Modules.BaseApplication.Features.Invoices.Commands.Create;
 
 public class CreateInvoiceCommand : IRequest<CreatedInvoiceResponse>, ISecuredRequest
 {

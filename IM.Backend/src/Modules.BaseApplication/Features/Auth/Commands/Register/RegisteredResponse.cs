@@ -1,7 +1,7 @@
 ﻿using Core.Domain.Entities.Security;
 using Core.Infrastructure.Security.JWT;
 
-namespace Application.Features.Auth.Commands.Register;
+namespace Modules.BaseApplication.Features.Auth.Commands.Register;
 
 public class RegisteredResponse
 {

@@ -1,11 +1,11 @@
-using Application.Features.Auth.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Security;
 using Core.Domain.Enums;
 using Core.Infrastructure.Rules;
 using Core.Infrastructure.Security.Hashing;
+using Modules.BaseApplication.Features.Auth.Constants;
 
-namespace Application.Features.Auth.Rules;
+namespace Modules.BaseApplication.Features.Auth.Rules;
 
 public class AuthBusinessRules : BaseBusinessRules
 {

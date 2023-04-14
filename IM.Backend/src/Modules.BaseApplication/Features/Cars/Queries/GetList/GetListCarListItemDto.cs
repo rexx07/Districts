@@ -1,7 +1,7 @@
-﻿using Application.Dtos;
-using Core.Domain.Enums;
+﻿using Core.Domain.Enums;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Cars.Queries.GetList;
+namespace Modules.BaseApplication.Features.Cars.Queries.GetList;
 
 public class GetListCarListItemDto : IDto
 {
@@ -10,6 +10,6 @@ public class GetListCarListItemDto : IDto
     public string ModelName { get; set; }
     public string ColorName { get; set; }
     public string Plate { get; set; }
-    public CarState CarState { get; set; }
+    public VehicleState CarState { get; set; }
     public short ModelYear { get; set; }
 }

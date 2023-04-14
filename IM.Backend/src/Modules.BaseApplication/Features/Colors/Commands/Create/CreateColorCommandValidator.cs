@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Colors.Commands.Create;
+namespace Modules.BaseApplication.Features.Colors.Commands.Create;
 
 public class CreateColorCommandValidator : AbstractValidator<CreateColorCommand>
 {

@@ -20,7 +20,7 @@ public class AirTransportRepositoryManager: IAirRepositoryManager
         _aircraftRepository = new Lazy<IAircraftRepository>(() => new AircraftRepository(context));
     }
 
-    public ISeatRepository SeatRepository => _seatRepository.Value;
+    public ISeatRepository Seat => _seatRepository.Value;
     public IAircraftRepository Aircraft => _aircraftRepository.Value;
     public IAirportRepository Airport => _airportRepository.Value;
     public IFlightRepository Flight => _flightRepository.Value;

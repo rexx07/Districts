@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Invoices.Commands.Update;
+namespace Modules.BaseApplication.Features.Invoices.Commands.Update;
 
 public class UpdatedInvoiceResponse : IDto
 {

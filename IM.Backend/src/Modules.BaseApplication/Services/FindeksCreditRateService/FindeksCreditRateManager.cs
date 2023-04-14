@@ -1,7 +1,7 @@
 ﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 
-namespace Application.Services.FindeksCreditRateService;
+namespace Modules.BaseApplication.Services.FindeksCreditRateService;
 
 public class FindeksCreditRateManager : IFindeksCreditRateService
 {

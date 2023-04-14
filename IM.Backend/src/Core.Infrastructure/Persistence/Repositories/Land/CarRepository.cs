@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.RepositoryContracts.Land;
 
 namespace Core.Infrastructure.Persistence.Repositories.Land;
 
-public class CarRepository : EfRepositoryBase<Car, BaseDbContext>, ICarRepository
+public class CarRepository : EfRepositoryBase<Vehicle, BaseDbContext>, ICarRepository
 {
     public CarRepository(BaseDbContext context)
         : base(context)

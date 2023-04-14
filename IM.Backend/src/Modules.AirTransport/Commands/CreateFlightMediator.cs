@@ -20,7 +20,7 @@ public sealed record CreateFlightCommand(string FlightNumber, long AircraftId, l
     public long Id { get; init; } = SnowFlakIdGenerator.NewId();
 }
 
-public sealed record CreateFlightCommandHandler : IRequestHandler<CreateFlightCommand, FlightResponseDto>
+public sealed record CreateFlightCommandHandler : ICommandHandler<CreateFlightCommand, FlightResponseDto>
 {
     private readonly IAirRepositoryManager _airRepositoryManager;
     private readonly IMapper _mapper;

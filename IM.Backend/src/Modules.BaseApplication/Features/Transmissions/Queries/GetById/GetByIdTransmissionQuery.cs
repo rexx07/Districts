@@ -1,10 +1,9 @@
-﻿using Application.Features.Transmissions.Rules;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Transmissions.Rules;
 
-namespace Application.Features.Transmissions.Queries.GetById;
+namespace Modules.BaseApplication.Features.Transmissions.Queries.GetById;
 
 public class GetByIdTransmissionQuery : IRequest<GetByIdTransmissionResponse>
 {

@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Application.Features.Cars.Validations;
+namespace Modules.BaseApplication.Features.Cars.Validations;
 
 public static class CarCustomValidationRules
 {

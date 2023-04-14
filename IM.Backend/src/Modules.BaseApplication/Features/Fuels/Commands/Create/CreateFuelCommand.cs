@@ -1,12 +1,11 @@
-﻿using Application.Features.Fuels.Rules;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Fuels.Constants.FuelsOperationClaims;
+using Modules.BaseApplication.Features.Fuels.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Fuels.Constants.FuelsOperationClaims;
 
-namespace Application.Features.Fuels.Commands.Create;
+namespace Modules.BaseApplication.Features.Fuels.Commands.Create;
 
 public class CreateFuelCommand : IRequest<CreatedFuelResponse>, ISecuredRequest
 {

@@ -1,10 +1,9 @@
-﻿using Application.Features.Models.Constants;
-using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Models.Constants;
 
-namespace Application.Features.Models.Rules;
+namespace Modules.BaseApplication.Features.Models.Rules;
 
 public class ModelBusinessRules : BaseBusinessRules
 {

@@ -1,4 +1,3 @@
-using Application;
 using Core.CrossCuttingConcerns.Exceptions.Extensions;
 using Core.Infrastructure;
 using Core.Infrastructure.Persistence;
@@ -8,6 +7,7 @@ using Core.Infrastructure.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Modules.BaseApplication;
 using Presentation.WebAPI;
 using Swashbuckle.AspNetCore.SwaggerUI;
 

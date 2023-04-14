@@ -366,7 +366,7 @@ namespace Persistence.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("Core.Domain.Entities.Vehicle", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -452,7 +452,7 @@ namespace Persistence.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Core.Domain.Entities.CarDamage", b =>
+            modelBuilder.Entity("Core.Domain.Entities.VehicleDamage", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1075,7 +1075,7 @@ namespace Persistence.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("Core.Domain.Entities.Vehicle", b =>
                 {
                     b.HasOne("Core.Domain.Entities.Color", "Color")
                         .WithMany("Cars")
@@ -1102,15 +1102,15 @@ namespace Persistence.Migrations
                     b.Navigation("RentalBranch");
                 });
 
-            modelBuilder.Entity("Core.Domain.Entities.CarDamage", b =>
+            modelBuilder.Entity("Core.Domain.Entities.VehicleDamage", b =>
                 {
-                    b.HasOne("Core.Domain.Entities.Car", "Car")
+                    b.HasOne("Core.Domain.Entities.Vehicle", "Vehicle")
                         .WithMany("CarDamages")
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Car");
+                    b.Navigation("Vehicle");
                 });
 
             modelBuilder.Entity("Core.Domain.Entities.CorporateCustomer", b =>
@@ -1197,7 +1197,7 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Core.Domain.Entities.Rental", b =>
                 {
-                    b.HasOne("Core.Domain.Entities.Car", "Car")
+                    b.HasOne("Core.Domain.Entities.Vehicle", "Vehicle")
                         .WithMany("Rentals")
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1220,7 +1220,7 @@ namespace Persistence.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.Navigation("Car");
+                    b.Navigation("Vehicle");
 
                     b.Navigation("Customer");
 
@@ -1260,7 +1260,7 @@ namespace Persistence.Migrations
                     b.Navigation("Models");
                 });
 
-            modelBuilder.Entity("Core.Domain.Entities.Car", b =>
+            modelBuilder.Entity("Core.Domain.Entities.Vehicle", b =>
                 {
                     b.Navigation("CarDamages");
 

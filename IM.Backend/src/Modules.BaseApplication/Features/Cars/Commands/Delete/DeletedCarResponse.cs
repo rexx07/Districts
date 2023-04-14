@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Cars.Commands.Delete;
+namespace Modules.BaseApplication.Features.Cars.Commands.Delete;
 
 public class DeletedCarResponse : IDto
 {

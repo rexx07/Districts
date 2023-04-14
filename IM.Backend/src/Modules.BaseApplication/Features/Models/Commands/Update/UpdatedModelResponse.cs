@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Models.Commands.Update;
+namespace Modules.BaseApplication.Features.Models.Commands.Update;
 
 public class UpdatedModelResponse : IDto
 {

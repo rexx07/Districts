@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.FindeksCreditRates.Commands.UpdateFromService;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Commands.UpdateFromService;
 
 public class UpdateFindeksCreditRateFromServiceResponse : IDto
 {

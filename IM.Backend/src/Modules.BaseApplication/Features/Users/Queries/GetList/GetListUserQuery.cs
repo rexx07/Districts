@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Users.Queries.GetList;
+namespace Modules.BaseApplication.Features.Users.Queries.GetList;
 
 public class GetListUserQuery : IRequest<GetListResponse<GetListUserListItemDto>>
 {

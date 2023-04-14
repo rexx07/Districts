@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities;
 
-namespace Application.Services.AdditionalServiceService;
+namespace Modules.BaseApplication.Services.AdditionalServiceService;
 
 public interface IAdditionalServiceService
 {

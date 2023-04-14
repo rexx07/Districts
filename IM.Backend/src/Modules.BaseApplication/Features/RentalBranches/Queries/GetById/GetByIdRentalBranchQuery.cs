@@ -1,9 +1,9 @@
-using Application.Features.RentalBranches.Rules;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.RentalBranches.Rules;
 
-namespace Application.Features.RentalBranches.Queries.GetById;
+namespace Modules.BaseApplication.Features.RentalBranches.Queries.GetById;
 
 public class GetByIdRentalBranchQuery : IRequest<GetByIdRentalBranchResponse>
 {

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Rentals.Commands.Create;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Create;
 
 public class CreateRentalCommandValidator : AbstractValidator<CreateRentalCommand>
 {

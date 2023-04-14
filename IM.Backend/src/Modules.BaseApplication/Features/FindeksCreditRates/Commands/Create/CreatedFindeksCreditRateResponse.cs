@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.FindeksCreditRates.Commands.Create;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Commands.Create;
 
 public class CreatedFindeksCreditRateResponse : IDto
 {

@@ -1,9 +1,9 @@
-using Application.Features.RentalBranches.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.RentalBranches.Constants;
 
-namespace Application.Features.RentalBranches.Rules;
+namespace Modules.BaseApplication.Features.RentalBranches.Rules;
 
 public class RentalBranchBusinessRules : BaseBusinessRules
 {

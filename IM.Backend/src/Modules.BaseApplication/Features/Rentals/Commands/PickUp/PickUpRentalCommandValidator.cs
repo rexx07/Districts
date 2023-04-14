@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Rentals.Commands.PickUp;
+namespace Modules.BaseApplication.Features.Rentals.Commands.PickUp;
 
 public class PickUpRentalCommandValidator : AbstractValidator<PickUpRentalCommand>
 {

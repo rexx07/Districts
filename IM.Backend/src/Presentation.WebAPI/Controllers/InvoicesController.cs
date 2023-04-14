@@ -1,13 +1,13 @@
-﻿using Application.Features.Invoices.Commands.Create;
-using Application.Features.Invoices.Commands.Delete;
-using Application.Features.Invoices.Commands.Update;
-using Application.Features.Invoices.Queries.GetById;
-using Application.Features.Invoices.Queries.GetList;
-using Application.Features.Invoices.Queries.GetListByCustomer;
-using Application.Features.Invoices.Queries.GetListByDates;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Invoices.Commands.Create;
+using Modules.BaseApplication.Features.Invoices.Commands.Delete;
+using Modules.BaseApplication.Features.Invoices.Commands.Update;
+using Modules.BaseApplication.Features.Invoices.Queries.GetById;
+using Modules.BaseApplication.Features.Invoices.Queries.GetList;
+using Modules.BaseApplication.Features.Invoices.Queries.GetListByCustomer;
+using Modules.BaseApplication.Features.Invoices.Queries.GetListByDates;
 
 namespace Presentation.WebAPI.Controllers;
 

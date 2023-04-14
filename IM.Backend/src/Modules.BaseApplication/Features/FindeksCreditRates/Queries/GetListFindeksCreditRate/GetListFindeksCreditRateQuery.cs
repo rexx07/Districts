@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.FindeksCreditRates.Queries.GetListFindeksCreditRate;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetListFindeksCreditRate;
 
 public class GetListFindeksCreditRateQuery : IRequest<GetListResponse<GetListFindeksCreditRateListItemDto>>
 {

@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Customers.Queries.GetList;
+namespace Modules.BaseApplication.Features.Customers.Queries.GetList;
 
 public class GetListCustomerQuery : IRequest<GetListResponse<GetListCustomerListItemDto>>
 {

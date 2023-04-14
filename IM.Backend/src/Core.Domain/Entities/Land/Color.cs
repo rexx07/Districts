@@ -4,7 +4,7 @@ public class Color : Entity
 {
     public Color()
     {
-        Cars = new HashSet<Car>();
+        Cars = new HashSet<Vehicle>();
     }
 
     public Color(int id, string name)
@@ -16,5 +16,5 @@ public class Color : Entity
 
     public string Name { get; set; }
 
-    public virtual ICollection<Car> Cars { get; set; }
+    public virtual ICollection<Vehicle> Cars { get; set; }
 }

@@ -2,7 +2,7 @@
 using Core.Infrastructure.Security.JWT;
 using Microsoft.Extensions.Configuration;
 
-namespace Application.Services.AuthService;
+namespace Modules.BaseApplication.Services.AuthService;
 
 public class AuthManager : IAuthService
 {

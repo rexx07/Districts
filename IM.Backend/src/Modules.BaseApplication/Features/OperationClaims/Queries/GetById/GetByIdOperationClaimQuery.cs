@@ -1,9 +1,9 @@
-using Application.Features.OperationClaims.Rules;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using MediatR;
+using Modules.BaseApplication.Features.OperationClaims.Rules;
 
-namespace Application.Features.OperationClaims.Queries.GetById;
+namespace Modules.BaseApplication.Features.OperationClaims.Queries.GetById;
 
 public class GetByIdOperationClaimQuery : IRequest<GetByIdOperationClaimResponse>
 {

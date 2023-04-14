@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.AdditionalServices.Commands.Delete;
+namespace Modules.BaseApplication.Features.AdditionalServices.Commands.Delete;
 
 public class DeletedAdditionalServiceResponse : IDto
 {

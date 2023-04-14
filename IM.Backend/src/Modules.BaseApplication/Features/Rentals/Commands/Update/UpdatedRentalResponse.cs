@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Rentals.Commands.Update;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Update;
 
 public class UpdatedRentalResponse : IDto
 {

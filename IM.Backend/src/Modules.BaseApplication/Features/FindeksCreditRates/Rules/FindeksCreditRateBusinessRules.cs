@@ -1,9 +1,9 @@
-using Application.Features.FindeksCreditRates.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.FindeksCreditRates.Constants;
 
-namespace Application.Features.FindeksCreditRates.Rules;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Rules;
 
 public class FindeksCreditRateBusinessRules : BaseBusinessRules
 {

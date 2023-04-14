@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Rentals.Commands.PickUp;
+namespace Modules.BaseApplication.Features.Rentals.Commands.PickUp;
 
 public class PickUpRentalResponse : IDto
 {

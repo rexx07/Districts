@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Models.Queries.GetList;
+namespace Modules.BaseApplication.Features.Models.Queries.GetList;
 
 public class GetListModelListItemDto : IDto
 {

@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.OperationClaims.Commands.Create;
+namespace Modules.BaseApplication.Features.OperationClaims.Commands.Create;
 
 public class CreatedOperationClaimResponse : IDto
 {

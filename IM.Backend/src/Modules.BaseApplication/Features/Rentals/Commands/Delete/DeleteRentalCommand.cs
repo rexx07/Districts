@@ -1,11 +1,11 @@
-﻿using Application.Features.Rentals.Constants;
-using Application.Pipelines.Authorization;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.Rentals.Constants.RentalsOperationClaims;
+using Modules.BaseApplication.Features.Rentals.Constants;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Rentals.Constants.RentalsOperationClaims;
 
-namespace Application.Features.Rentals.Commands.Delete;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Delete;
 
 public class DeleteRentalCommand : IRequest<DeletedRentalResponse>, ISecuredRequest
 {

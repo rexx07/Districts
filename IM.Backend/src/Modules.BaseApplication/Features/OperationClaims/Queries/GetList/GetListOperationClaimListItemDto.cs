@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.OperationClaims.Queries.GetList;
+namespace Modules.BaseApplication.Features.OperationClaims.Queries.GetList;
 
 public class GetListOperationClaimListItemDto : IDto
 {

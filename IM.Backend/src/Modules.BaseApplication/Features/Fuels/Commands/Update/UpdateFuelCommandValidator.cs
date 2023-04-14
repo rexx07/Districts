@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Fuels.Commands.Update;
+namespace Modules.BaseApplication.Features.Fuels.Commands.Update;
 
 public class UpdateFuelCommandValidator : AbstractValidator<UpdateFuelCommand>
 {

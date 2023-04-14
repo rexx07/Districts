@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Rentals.Commands.Update;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Update;
 
 public class UpdateRentalCommandValidator : AbstractValidator<UpdateRentalCommand>
 {

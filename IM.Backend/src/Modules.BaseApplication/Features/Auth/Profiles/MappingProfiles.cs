@@ -1,8 +1,8 @@
-using Application.Features.Auth.Commands.RevokeToken;
 using AutoMapper;
 using Core.Domain.Entities.Security;
+using Modules.BaseApplication.Features.Auth.Commands.RevokeToken;
 
-namespace Application.Features.Auth.Profiles;
+namespace Modules.BaseApplication.Features.Auth.Profiles;
 
 public class MappingProfiles : Profile
 {

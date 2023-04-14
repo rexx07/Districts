@@ -1,11 +1,11 @@
-﻿using Application.Features.Fuels.Commands.Create;
-using Application.Features.Fuels.Commands.Delete;
-using Application.Features.Fuels.Commands.Update;
-using Application.Features.Fuels.Queries.GetById;
-using Application.Features.Fuels.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Fuels.Commands.Create;
+using Modules.BaseApplication.Features.Fuels.Commands.Delete;
+using Modules.BaseApplication.Features.Fuels.Commands.Update;
+using Modules.BaseApplication.Features.Fuels.Queries.GetById;
+using Modules.BaseApplication.Features.Fuels.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

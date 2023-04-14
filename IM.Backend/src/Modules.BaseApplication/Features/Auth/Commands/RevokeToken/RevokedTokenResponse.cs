@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Auth.Commands.RevokeToken;
+namespace Modules.BaseApplication.Features.Auth.Commands.RevokeToken;
 
 public class RevokedTokenResponse : IDto
 {

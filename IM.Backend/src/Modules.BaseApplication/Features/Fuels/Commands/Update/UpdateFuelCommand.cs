@@ -1,12 +1,11 @@
-﻿using Application.Features.Fuels.Constants;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Fuels.Constants.FuelsOperationClaims;
+using Modules.BaseApplication.Features.Fuels.Constants;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Fuels.Constants.FuelsOperationClaims;
 
-namespace Application.Features.Fuels.Commands.Update;
+namespace Modules.BaseApplication.Features.Fuels.Commands.Update;
 
 public class UpdateFuelCommand : IRequest<UpdatedFuelResponse>, ISecuredRequest
 {

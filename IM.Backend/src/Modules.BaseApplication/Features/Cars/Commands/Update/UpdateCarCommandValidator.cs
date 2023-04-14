@@ -1,7 +1,7 @@
-﻿using Application.Features.Cars.Validations;
-using FluentValidation;
+﻿using FluentValidation;
+using Modules.BaseApplication.Features.Cars.Validations;
 
-namespace Application.Features.Cars.Commands.Update;
+namespace Modules.BaseApplication.Features.Cars.Commands.Update;
 
 public class UpdateCarCommandValidator : AbstractValidator<UpdateCarCommand>
 {

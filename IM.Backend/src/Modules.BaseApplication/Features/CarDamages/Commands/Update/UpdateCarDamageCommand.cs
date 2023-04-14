@@ -1,13 +1,12 @@
-using Application.Features.CarDamages.Constants;
-using Application.Features.CarDamages.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.CarDamages.Constants.CarDamagesOperationClaims;
+using Modules.BaseApplication.Features.CarDamages.Constants;
+using Modules.BaseApplication.Features.CarDamages.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.CarDamages.Constants.CarDamagesOperationClaims;
 
-namespace Application.Features.CarDamages.Commands.Update;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Update;
 
 public class UpdateCarDamageCommand : IRequest<UpdatedCarDamageResponse>, ISecuredRequest
 {
@@ -39,9 +38,9 @@ public class UpdateCarDamageCommand : IRequest<UpdatedCarDamageResponse>, ISecur
         public async Task<UpdatedCarDamageResponse> Handle(UpdateCarDamageCommand request,
                                                            CancellationToken cancellationToken)
         {
-            CarDamage mappedCarDamage = _mapper.Map<CarDamage>(request);
-            CarDamage updatedCarDamage = await _carDamageRepository.UpdateAsync(mappedCarDamage);
-            UpdatedCarDamageResponse updatedCarDamageDto = _mapper.Map<UpdatedCarDamageResponse>(updatedCarDamage);
+            VehicleDamage mappedVehicleDamage = _mapper.Map<VehicleDamage>(request);
+            VehicleDamage updatedVehicleDamage = await _carDamageRepository.UpdateAsync(mappedVehicleDamage);
+            UpdatedCarDamageResponse updatedCarDamageDto = _mapper.Map<UpdatedCarDamageResponse>(updatedVehicleDamage);
             return updatedCarDamageDto;
         }
     }

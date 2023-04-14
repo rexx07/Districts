@@ -1,9 +1,9 @@
-using Application.Features.OperationClaims.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Security;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.OperationClaims.Constants;
 
-namespace Application.Features.OperationClaims.Rules;
+namespace Modules.BaseApplication.Features.OperationClaims.Rules;
 
 public class OperationClaimBusinessRules : BaseBusinessRules
 {

@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Models.Queries.GetListByDynamic;
+namespace Modules.BaseApplication.Features.Models.Queries.GetListByDynamic;
 
 public class GetListByDynamicModelListItemDto : IDto
 {

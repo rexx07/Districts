@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Transmissions.Commands.Update;
+namespace Modules.BaseApplication.Features.Transmissions.Commands.Update;
 
 public class UpdateTransmissionCommandValidator : AbstractValidator<UpdateTransmissionCommand>
 {

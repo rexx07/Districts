@@ -1,10 +1,9 @@
-﻿using Application.Features.Models.Rules;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Models.Rules;
 
-namespace Application.Features.Models.Queries.GetById;
+namespace Modules.BaseApplication.Features.Models.Queries.GetById;
 
 public class GetByIdModelQuery : IRequest<GetByIdModelResponse>
 {

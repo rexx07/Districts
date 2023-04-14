@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Users.Commands.Create;
+namespace Modules.BaseApplication.Features.Users.Commands.Create;
 
 public class CreatedUserResponse : IDto
 {

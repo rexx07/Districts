@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Models.Commands.Delete;
+namespace Modules.BaseApplication.Features.Models.Commands.Delete;
 
 public class DeletedModelResponse : IDto
 {

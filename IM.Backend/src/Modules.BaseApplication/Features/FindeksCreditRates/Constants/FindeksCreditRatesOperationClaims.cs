@@ -1,4 +1,4 @@
-﻿namespace Application.Features.FindeksCreditRates.Constants;
+﻿namespace Modules.BaseApplication.Features.FindeksCreditRates.Constants;
 
 public static class FindeksCreditRatesOperationClaims
 {

@@ -1,11 +1,10 @@
-﻿using Application.Features.Cars.Constants;
-using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Land;
 using Core.Domain.Enums;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Cars.Constants;
 
-namespace Application.Features.Cars.Rules;
+namespace Modules.BaseApplication.Features.Cars.Rules;
 
 public class CarBusinessRules : BaseBusinessRules
 {
@@ -18,29 +17,29 @@ public class CarBusinessRules : BaseBusinessRules
 
     public async Task CarIdShouldExistWhenSelected(int id)
     {
-        Car? result = await _carRepository.GetAsync(predicate: c => c.Id == id, enableTracking: false);
+        Vehicle? result = await _carRepository.GetAsync(predicate: c => c.Id == id, enableTracking: false);
         if (result == null)
             throw new BusinessException(CarsMessages.CarNotExists);
     }
 
     public async Task CarCanNotBeMaintainWhenIsRented(int id)
     {
-        Car? car = await _carRepository.GetAsync(predicate: c => c.Id == id, enableTracking: false);
-        if (car.CarState == CarState.Rented)
+        Vehicle? car = await _carRepository.GetAsync(predicate: c => c.Id == id, enableTracking: false);
+        if (car.CarState == VehicleState.Rented)
             throw new BusinessException(CarsMessages.CarCanNotBeMaintainWhenIsRented);
     }
 
     public async Task CarCanNotBeRentWhenIsInMaintenance(int carId)
     {
-        Car? car = await _carRepository.GetAsync(predicate: c => c.Id == carId, enableTracking: false);
-        if (car.CarState == CarState.Maintenance)
+        Vehicle? car = await _carRepository.GetAsync(predicate: c => c.Id == carId, enableTracking: false);
+        if (car.CarState == VehicleState.Maintenance)
             throw new BusinessException(CarsMessages.CarCanNotBeRentWhenIsInMaintenance);
     }
 
     public async Task CarCanNotBeRentWhenIsRented(int carId)
     {
-        Car? car = await _carRepository.GetAsync(predicate: c => c.Id == carId, enableTracking: false);
-        if (car.CarState == CarState.Rented)
+        Vehicle? car = await _carRepository.GetAsync(predicate: c => c.Id == carId, enableTracking: false);
+        if (car.CarState == VehicleState.Rented)
             throw new BusinessException(CarsMessages.CarCanNotBeRentWhenIsRented);
     }
 }

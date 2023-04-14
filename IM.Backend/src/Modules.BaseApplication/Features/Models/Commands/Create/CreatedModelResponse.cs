@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Models.Commands.Create;
+namespace Modules.BaseApplication.Features.Models.Commands.Create;
 
 public class CreatedModelResponse : IDto
 {

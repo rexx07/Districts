@@ -1,12 +1,11 @@
-﻿using Application.Features.Transmissions.Rules;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Transmissions.Constants.TransmissionsOperationClaims;
+using Modules.BaseApplication.Features.Transmissions.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Transmissions.Constants.TransmissionsOperationClaims;
 
-namespace Application.Features.Transmissions.Commands.Create;
+namespace Modules.BaseApplication.Features.Transmissions.Commands.Create;
 
 public class CreateTransmissionCommand : IRequest<CreatedTransmissionResponse>, ISecuredRequest
 {

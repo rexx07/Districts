@@ -1,11 +1,10 @@
-﻿using Application.Features.Transmissions.Constants;
-using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Transmissions.Constants;
 
-namespace Application.Features.Transmissions.Rules;
+namespace Modules.BaseApplication.Features.Transmissions.Rules;
 
 public class TransmissionBusinessRules : BaseBusinessRules
 {

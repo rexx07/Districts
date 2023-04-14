@@ -22,7 +22,7 @@ public sealed record UpdateFlightCommand(long Id, string FlightNumber, long Airc
 
 }
 
-public sealed class UpdateFlightCommandHandler : IRequestHandler<UpdateFlightCommand, FlightResponseDto>
+public sealed class UpdateFlightCommandHandler : ICommandHandler<UpdateFlightCommand, FlightResponseDto>
 {
     private readonly IAirRepositoryManager _airRepositoryManager;
     private readonly IMapper _mapper;

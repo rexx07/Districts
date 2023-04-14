@@ -1,4 +1,4 @@
-namespace Application.Features.AdditionalServices.Constants;
+namespace Modules.BaseApplication.Features.AdditionalServices.Constants;
 
 public static class AdditionalServicesMessages
 {

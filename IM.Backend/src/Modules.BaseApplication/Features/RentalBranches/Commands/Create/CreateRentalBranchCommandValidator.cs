@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.RentalBranches.Commands.Create;
+namespace Modules.BaseApplication.Features.RentalBranches.Commands.Create;
 
 public class CreateRentalBranchCommandValidator : AbstractValidator<CreateRentalBranchCommand>
 {

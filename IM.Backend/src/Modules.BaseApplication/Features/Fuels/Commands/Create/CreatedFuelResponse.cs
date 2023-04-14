@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Fuels.Commands.Create;
+namespace Modules.BaseApplication.Features.Fuels.Commands.Create;
 
 public class CreatedFuelResponse : IDto
 {

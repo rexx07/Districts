@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Transmissions.Commands.Create;
+namespace Modules.BaseApplication.Features.Transmissions.Commands.Create;
 
 public class CreatedTransmissionResponse : IDto
 {

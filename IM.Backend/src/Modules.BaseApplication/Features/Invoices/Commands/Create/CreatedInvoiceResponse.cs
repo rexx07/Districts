@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Invoices.Commands.Create;
+namespace Modules.BaseApplication.Features.Invoices.Commands.Create;
 
 public class CreatedInvoiceResponse : IDto
 {

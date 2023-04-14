@@ -1,11 +1,11 @@
-﻿using Application.Features.Brands.Commands.Create;
-using Application.Features.Brands.Commands.Delete;
-using Application.Features.Brands.Commands.Update;
-using Application.Features.Brands.Queries.GetById;
-using Application.Features.Brands.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Brands.Commands.Create;
+using Modules.BaseApplication.Features.Brands.Commands.Delete;
+using Modules.BaseApplication.Features.Brands.Commands.Update;
+using Modules.BaseApplication.Features.Brands.Queries.GetById;
+using Modules.BaseApplication.Features.Brands.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

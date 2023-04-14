@@ -1,11 +1,11 @@
-﻿using Application.Features.AdditionalServices.Commands.Create;
-using Application.Features.AdditionalServices.Commands.Delete;
-using Application.Features.AdditionalServices.Commands.Update;
-using Application.Features.AdditionalServices.Queries.GetById;
-using Application.Features.AdditionalServices.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.AdditionalServices.Commands.Create;
+using Modules.BaseApplication.Features.AdditionalServices.Commands.Delete;
+using Modules.BaseApplication.Features.AdditionalServices.Commands.Update;
+using Modules.BaseApplication.Features.AdditionalServices.Queries.GetById;
+using Modules.BaseApplication.Features.AdditionalServices.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

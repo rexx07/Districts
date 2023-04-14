@@ -1,13 +1,13 @@
-using Application.Features.OperationClaims.Commands.Create;
-using Application.Features.OperationClaims.Commands.Delete;
-using Application.Features.OperationClaims.Commands.Update;
-using Application.Features.OperationClaims.Queries.GetById;
-using Application.Features.OperationClaims.Queries.GetList;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.OperationClaims.Commands.Create;
+using Modules.BaseApplication.Features.OperationClaims.Commands.Delete;
+using Modules.BaseApplication.Features.OperationClaims.Commands.Update;
+using Modules.BaseApplication.Features.OperationClaims.Queries.GetById;
+using Modules.BaseApplication.Features.OperationClaims.Queries.GetList;
 
-namespace Application.Features.OperationClaims.Profiles;
+namespace Modules.BaseApplication.Features.OperationClaims.Profiles;
 
 public class MappingProfiles : Profile
 {

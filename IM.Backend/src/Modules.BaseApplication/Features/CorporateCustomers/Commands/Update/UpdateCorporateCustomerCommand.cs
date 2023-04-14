@@ -1,12 +1,12 @@
-using Application.Features.CorporateCustomers.Constants;
-using Application.Features.CorporateCustomers.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.CorporateCustomers.Constants.CorporateCustomersOperationClaims;
+using Modules.BaseApplication.Features.CorporateCustomers.Constants;
+using Modules.BaseApplication.Features.CorporateCustomers.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.CorporateCustomers.Constants.CorporateCustomersOperationClaims;
 
-namespace Application.Features.CorporateCustomers.Commands.Update;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Commands.Update;
 
 public class UpdateCorporateCustomerCommand : IRequest<UpdatedCorporateCustomerResponse>, ISecuredRequest
 {

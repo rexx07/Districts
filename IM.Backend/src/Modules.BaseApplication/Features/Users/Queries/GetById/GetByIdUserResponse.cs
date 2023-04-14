@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Users.Queries.GetById;
+namespace Modules.BaseApplication.Features.Users.Queries.GetById;
 
 public class GetByIdUserResponse : IDto
 {

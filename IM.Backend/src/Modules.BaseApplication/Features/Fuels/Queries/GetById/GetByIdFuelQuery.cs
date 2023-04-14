@@ -1,10 +1,9 @@
-﻿using Application.Features.Fuels.Rules;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Fuels.Rules;
 
-namespace Application.Features.Fuels.Queries.GetById;
+namespace Modules.BaseApplication.Features.Fuels.Queries.GetById;
 
 public class GetByIdFuelQuery : IRequest<GetByIdFuelResponse>
 {

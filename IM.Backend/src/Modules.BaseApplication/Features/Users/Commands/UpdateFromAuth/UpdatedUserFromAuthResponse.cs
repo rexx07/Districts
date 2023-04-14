@@ -1,7 +1,7 @@
-﻿using Application.Dtos;
-using Core.Infrastructure.Security.JWT;
+﻿using Core.Infrastructure.Security.JWT;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Users.Commands.UpdateFromAuth;
+namespace Modules.BaseApplication.Features.Users.Commands.UpdateFromAuth;
 
 public class UpdatedUserFromAuthResponse : IDto
 {

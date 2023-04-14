@@ -1,9 +1,9 @@
-using Application.Features.Users.Rules;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using MediatR;
+using Modules.BaseApplication.Features.Users.Rules;
 
-namespace Application.Features.Users.Queries.GetById;
+namespace Modules.BaseApplication.Features.Users.Queries.GetById;
 
 public class GetByIdUserQuery : IRequest<GetByIdUserResponse>
 {

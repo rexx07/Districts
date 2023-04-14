@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Invoices.Queries.GetListByDates;
+namespace Modules.BaseApplication.Features.Invoices.Queries.GetListByDates;
 
 public class GetListByDatesInvoiceListItemDto : IDto
 {

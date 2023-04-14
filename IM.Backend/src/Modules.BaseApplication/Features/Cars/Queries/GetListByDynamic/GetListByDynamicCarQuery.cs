@@ -1,12 +1,11 @@
 ﻿using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Dynamic;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Cars.Queries.GetListByDynamic;
+namespace Modules.BaseApplication.Features.Cars.Queries.GetListByDynamic;
 
 public class GetListByDynamicCarQuery : IRequest<GetListResponse<GetListByDynamicCarListItemDto>>
 {
@@ -30,7 +29,7 @@ public class GetListByDynamicCarQuery : IRequest<GetListResponse<GetListByDynami
             CancellationToken cancellationToken
         )
         {
-            IPaginate<Car> cars = await _carRepository.GetListByDynamicAsync(
+            IPaginate<Vehicle> cars = await _carRepository.GetListByDynamicAsync(
                                       request.DynamicQuery,
                                       include: c =>
                                           c.Include(c => c.Model).Include(c => c.Model.Brand).Include(c => c.Color),

@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.CarDamages.Queries.GetList;
+namespace Modules.BaseApplication.Features.CarDamages.Queries.GetList;
 
 public class GetListCarDamageListItemDto : IDto
 {

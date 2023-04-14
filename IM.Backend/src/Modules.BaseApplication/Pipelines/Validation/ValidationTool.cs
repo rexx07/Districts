@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 
-namespace Application.Pipelines.Validation;
+namespace Modules.BaseApplication.Pipelines.Validation;
 
 public class ValidationTool
 {

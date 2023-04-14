@@ -1,5 +1,5 @@
-﻿using Application.Dtos;
-using Core.Domain.Enums;
+﻿using Core.Domain.Enums;
+using Modules.BaseApplication.Dtos;
 
 namespace Modules.AirTransport.Dtos;
 

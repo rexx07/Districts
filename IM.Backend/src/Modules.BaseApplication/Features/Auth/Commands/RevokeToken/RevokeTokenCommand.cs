@@ -1,10 +1,10 @@
-﻿using Application.Features.Auth.Rules;
-using Application.Services.AuthService;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities.Security;
 using MediatR;
+using Modules.BaseApplication.Features.Auth.Rules;
+using Modules.BaseApplication.Services.AuthService;
 
-namespace Application.Features.Auth.Commands.RevokeToken;
+namespace Modules.BaseApplication.Features.Auth.Commands.RevokeToken;
 
 public class RevokeTokenCommand : IRequest<RevokedTokenResponse>
 {

@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Colors.Commands.Update;
+namespace Modules.BaseApplication.Features.Colors.Commands.Update;
 
 public class UpdatedColorResponse : IDto
 {

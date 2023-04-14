@@ -19,7 +19,7 @@ public class RentalConfiguration : IEntityTypeConfiguration<Rental>
         builder.Property(r => r.ReturnDate).HasColumnName("ReturnDate");
         builder.Property(r => r.RentStartKilometer).HasColumnName("RentStartKilometer");
         builder.Property(r => r.RentEndKilometer).HasColumnName("RentEndKilometer");
-        builder.HasOne(r => r.Car);
+        builder.HasOne(r => r.Vehicle);
         builder.HasOne(r => r.Customer);
         builder
             .HasOne(r => r.RentStartRentalBranch)

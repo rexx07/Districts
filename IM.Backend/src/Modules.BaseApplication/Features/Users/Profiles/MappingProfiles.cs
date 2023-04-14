@@ -1,14 +1,14 @@
-using Application.Features.Users.Commands.Create;
-using Application.Features.Users.Commands.Delete;
-using Application.Features.Users.Commands.Update;
-using Application.Features.Users.Commands.UpdateFromAuth;
-using Application.Features.Users.Queries.GetById;
-using Application.Features.Users.Queries.GetList;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Users.Commands.Create;
+using Modules.BaseApplication.Features.Users.Commands.Delete;
+using Modules.BaseApplication.Features.Users.Commands.Update;
+using Modules.BaseApplication.Features.Users.Commands.UpdateFromAuth;
+using Modules.BaseApplication.Features.Users.Queries.GetById;
+using Modules.BaseApplication.Features.Users.Queries.GetList;
 
-namespace Application.Features.Users.Profiles;
+namespace Modules.BaseApplication.Features.Users.Profiles;
 
 public class MappingProfiles : Profile
 {

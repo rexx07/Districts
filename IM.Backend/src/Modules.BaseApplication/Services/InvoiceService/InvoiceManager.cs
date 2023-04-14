@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities;
 
-namespace Application.Services.InvoiceService;
+namespace Modules.BaseApplication.Services.InvoiceService;
 
 public class InvoiceManager : IInvoiceService
 {

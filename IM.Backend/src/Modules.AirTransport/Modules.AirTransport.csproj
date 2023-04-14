@@ -7,8 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Profiles\" />
-      <Folder Include="Queries\" />
       <Folder Include="Services\" />
     </ItemGroup>
 

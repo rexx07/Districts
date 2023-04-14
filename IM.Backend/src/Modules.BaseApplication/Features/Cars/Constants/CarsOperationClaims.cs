@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Cars.Constants;
+﻿namespace Modules.BaseApplication.Features.Cars.Constants;
 
 public static class CarsOperationClaims
 {

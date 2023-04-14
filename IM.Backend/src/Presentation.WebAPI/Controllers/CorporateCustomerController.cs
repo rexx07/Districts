@@ -1,12 +1,12 @@
-﻿using Application.Features.CorporateCustomers.Commands.Create;
-using Application.Features.CorporateCustomers.Commands.Delete;
-using Application.Features.CorporateCustomers.Commands.Update;
-using Application.Features.CorporateCustomers.Queries.GetByCustomerId;
-using Application.Features.CorporateCustomers.Queries.GetById;
-using Application.Features.CorporateCustomers.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.CorporateCustomers.Commands.Create;
+using Modules.BaseApplication.Features.CorporateCustomers.Commands.Delete;
+using Modules.BaseApplication.Features.CorporateCustomers.Commands.Update;
+using Modules.BaseApplication.Features.CorporateCustomers.Queries.GetByCustomerId;
+using Modules.BaseApplication.Features.CorporateCustomers.Queries.GetById;
+using Modules.BaseApplication.Features.CorporateCustomers.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

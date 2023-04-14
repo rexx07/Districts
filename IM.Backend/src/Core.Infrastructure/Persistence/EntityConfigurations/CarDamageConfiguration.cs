@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Core.Infrastructure.Persistence.EntityConfigurations;
 
-public class CarDamageConfiguration : IEntityTypeConfiguration<CarDamage>
+public class CarDamageConfiguration : IEntityTypeConfiguration<VehicleDamage>
 {
-    public void Configure(EntityTypeBuilder<CarDamage> builder)
+    public void Configure(EntityTypeBuilder<VehicleDamage> builder)
     {
         builder.ToTable("CarDamages").HasKey(k => k.Id);
         builder.Property(p => p.Id).HasColumnName("Id");

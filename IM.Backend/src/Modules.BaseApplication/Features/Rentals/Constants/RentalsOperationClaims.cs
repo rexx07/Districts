@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Rentals.Constants;
+﻿namespace Modules.BaseApplication.Features.Rentals.Constants;
 
 public static class RentalsOperationClaims
 {

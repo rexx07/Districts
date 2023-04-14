@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Transmissions.Queries.GetById;
+namespace Modules.BaseApplication.Features.Transmissions.Queries.GetById;
 
 public class GetByIdTransmissionResponse : IDto
 {

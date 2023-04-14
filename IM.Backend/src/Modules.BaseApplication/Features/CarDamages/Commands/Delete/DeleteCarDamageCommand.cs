@@ -1,13 +1,12 @@
-using Application.Features.CarDamages.Constants;
-using Application.Features.CarDamages.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.CarDamages.Constants.CarDamagesOperationClaims;
+using Modules.BaseApplication.Features.CarDamages.Constants;
+using Modules.BaseApplication.Features.CarDamages.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.CarDamages.Constants.CarDamagesOperationClaims;
 
-namespace Application.Features.CarDamages.Commands.Delete;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Delete;
 
 public class DeleteCarDamageCommand : IRequest<DeletedCarDamageResponse>, ISecuredRequest
 {
@@ -38,9 +37,9 @@ public class DeleteCarDamageCommand : IRequest<DeletedCarDamageResponse>, ISecur
         {
             await _carDamageBusinessRules.CarDamageIdShouldExistWhenSelected(request.Id);
 
-            CarDamage mappedCarDamage = _mapper.Map<CarDamage>(request);
-            CarDamage deletedCarDamage = await _carDamageRepository.DeleteAsync(mappedCarDamage);
-            DeletedCarDamageResponse deletedCarDamageDto = _mapper.Map<DeletedCarDamageResponse>(deletedCarDamage);
+            VehicleDamage mappedVehicleDamage = _mapper.Map<VehicleDamage>(request);
+            VehicleDamage deletedVehicleDamage = await _carDamageRepository.DeleteAsync(mappedVehicleDamage);
+            DeletedCarDamageResponse deletedCarDamageDto = _mapper.Map<DeletedCarDamageResponse>(deletedVehicleDamage);
             return deletedCarDamageDto;
         }
     }

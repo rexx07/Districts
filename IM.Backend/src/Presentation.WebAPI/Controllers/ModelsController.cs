@@ -1,13 +1,13 @@
-﻿using Application.Features.Models.Commands.Create;
-using Application.Features.Models.Commands.Delete;
-using Application.Features.Models.Commands.Update;
-using Application.Features.Models.Queries.GetById;
-using Application.Features.Models.Queries.GetList;
-using Application.Features.Models.Queries.GetListByDynamic;
-using Core.Infrastructure.Persistence.Dynamic;
+﻿using Core.Infrastructure.Persistence.Dynamic;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Models.Commands.Create;
+using Modules.BaseApplication.Features.Models.Commands.Delete;
+using Modules.BaseApplication.Features.Models.Commands.Update;
+using Modules.BaseApplication.Features.Models.Queries.GetById;
+using Modules.BaseApplication.Features.Models.Queries.GetList;
+using Modules.BaseApplication.Features.Models.Queries.GetListByDynamic;
 
 namespace Presentation.WebAPI.Controllers;
 

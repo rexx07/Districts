@@ -1,9 +1,9 @@
-﻿using Application.Features.Rentals.Rules;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.Rentals.Rules;
 
-namespace Application.Features.Rentals.Queries.GetById;
+namespace Modules.BaseApplication.Features.Rentals.Queries.GetById;
 
 public class GetByIdRentalQuery : IRequest<GetByIdRentalResponse>
 {

@@ -1,11 +1,11 @@
-﻿using Application.Features.Users.Rules;
-using Application.Services.AuthService;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities.Security;
 using Core.Infrastructure.Security.Hashing;
 using MediatR;
+using Modules.BaseApplication.Features.Users.Rules;
+using Modules.BaseApplication.Services.AuthService;
 
-namespace Application.Features.Users.Commands.UpdateFromAuth;
+namespace Modules.BaseApplication.Features.Users.Commands.UpdateFromAuth;
 
 public class UpdateUserFromAuthCommand : IRequest<UpdatedUserFromAuthResponse>
 {

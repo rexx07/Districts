@@ -1,12 +1,12 @@
-﻿using Application.Features.Rentals.Constants;
-using Application.Features.Rentals.Rules;
-using Application.Pipelines.Authorization;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.Rentals.Constants.RentalsOperationClaims;
+using Modules.BaseApplication.Features.Rentals.Constants;
+using Modules.BaseApplication.Features.Rentals.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Rentals.Constants.RentalsOperationClaims;
 
-namespace Application.Features.Rentals.Commands.Update;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Update;
 
 public class UpdateRentalCommand : IRequest<UpdatedRentalResponse>, ISecuredRequest
 {

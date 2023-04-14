@@ -16,16 +16,16 @@ public sealed record CreateAirportCommand(string Name, string Address, string Co
     public long Id { get; } = SnowFlakIdGenerator.NewId();
 }
 
-public sealed class CreateAirportHandler : IRequestHandler<CreateAirportCommand, AirportResponseDto>
+public sealed class CreateAirportHandler : ICommandHandler<CreateAirportCommand, AirportResponseDto>
 {
-    private readonly IAirRepositoryManager _airRepositoryManager;
+    private readonly IAirRepositoryManager _airRepository;
     private readonly IMapper _mapper;
     private readonly AirportBusinessRules _airportBusinessRules;
 
     public CreateAirportHandler(IAirRepositoryManager airRepositoryManager, IMapper mapper, 
                                 AirportBusinessRules airportBusinessRules)
     {
-        _airRepositoryManager = airRepositoryManager;
+        _airRepository = airRepositoryManager;
         _mapper = mapper;
         _airportBusinessRules = airportBusinessRules;
     }
@@ -34,8 +34,8 @@ public sealed class CreateAirportHandler : IRequestHandler<CreateAirportCommand,
     {
         _airportBusinessRules.AirportNotExists(command);
 
-        Airport? airportEntity = Airport.Create(command.Id, command.Name, command.Code, command.Address);
-        Airport newAirport = await _airRepositoryManager.Airport.AddAsync(airportEntity, cancellationToken);
+        Airport airportEntity = Airport.Create(command.Id, command.Name, command.Code, command.Address);
+        Airport newAirport = await _airRepository.Airport.AddAsync(airportEntity, cancellationToken);
 
         return _mapper.Map<AirportResponseDto>(newAirport);
     }

@@ -1,12 +1,12 @@
-﻿using Application.Dtos;
-using Application.Features.Auth.Rules;
-using Application.Services.AuthService;
-using Core.Domain.Entities.Security;
+﻿using Core.Domain.Entities.Security;
 using Core.Infrastructure.Security.Hashing;
 using Core.Infrastructure.Security.JWT;
 using MediatR;
+using Modules.BaseApplication.Dtos;
+using Modules.BaseApplication.Features.Auth.Rules;
+using Modules.BaseApplication.Services.AuthService;
 
-namespace Application.Features.Auth.Commands.Register;
+namespace Modules.BaseApplication.Features.Auth.Commands.Register;
 
 public class RegisterCommand : IRequest<RegisteredResponse>
 {

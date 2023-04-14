@@ -1,12 +1,11 @@
-using Application.Features.CarDamages.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.CarDamages.Constants.CarDamagesOperationClaims;
+using Modules.BaseApplication.Features.CarDamages.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.CarDamages.Constants.CarDamagesOperationClaims;
 
-namespace Application.Features.CarDamages.Commands.Create;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Create;
 
 public class CreateCarDamageCommand : IRequest<CreatedCarDamageResponse>, ISecuredRequest
 {
@@ -35,9 +34,9 @@ public class CreateCarDamageCommand : IRequest<CreatedCarDamageResponse>, ISecur
         public async Task<CreatedCarDamageResponse> Handle(CreateCarDamageCommand request,
                                                            CancellationToken cancellationToken)
         {
-            CarDamage mappedCarDamage = _mapper.Map<CarDamage>(request);
-            CarDamage createdCarDamage = await _carDamageRepository.AddAsync(mappedCarDamage);
-            CreatedCarDamageResponse createdCarDamageResponse = _mapper.Map<CreatedCarDamageResponse>(createdCarDamage);
+            VehicleDamage mappedVehicleDamage = _mapper.Map<VehicleDamage>(request);
+            VehicleDamage createdVehicleDamage = await _carDamageRepository.AddAsync(mappedVehicleDamage);
+            CreatedCarDamageResponse createdCarDamageResponse = _mapper.Map<CreatedCarDamageResponse>(createdVehicleDamage);
             return createdCarDamageResponse;
         }
     }

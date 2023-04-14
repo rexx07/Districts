@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.CarDamages.Commands.Update;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Update;
 
 public class UpdatedCarDamageResponse : IDto
 {

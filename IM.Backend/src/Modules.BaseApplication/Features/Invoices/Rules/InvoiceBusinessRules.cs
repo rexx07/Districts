@@ -1,9 +1,9 @@
-using Application.Features.Invoices.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Invoices.Constants;
 
-namespace Application.Features.Invoices.Rules;
+namespace Modules.BaseApplication.Features.Invoices.Rules;
 
 public class InvoiceBusinessRules : BaseBusinessRules
 {

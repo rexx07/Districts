@@ -1,10 +1,9 @@
-﻿using Application.Features.Colors.Rules;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Colors.Rules;
 
-namespace Application.Features.Colors.Queries.GetById;
+namespace Modules.BaseApplication.Features.Colors.Queries.GetById;
 
 public class GetByIdColorQuery : IRequest<GetByIdColorResponse>
 {

@@ -1,11 +1,11 @@
-﻿using Application.Features.Auth.Rules;
-using Application.Services.AuthenticatorService;
-using Application.Services.UserService;
-using Core.Domain.Entities.Security;
+﻿using Core.Domain.Entities.Security;
 using Core.Domain.Enums;
 using MediatR;
+using Modules.BaseApplication.Features.Auth.Rules;
+using Modules.BaseApplication.Services.AuthenticatorService;
+using Modules.BaseApplication.Services.UserService;
 
-namespace Application.Features.Auth.Commands.VerifyOtpAuthenticator;
+namespace Modules.BaseApplication.Features.Auth.Commands.VerifyOtpAuthenticator;
 
 public class VerifyOtpAuthenticatorCommand : IRequest
 {

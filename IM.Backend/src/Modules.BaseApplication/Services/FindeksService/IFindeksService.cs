@@ -1,4 +1,4 @@
-﻿namespace Application.Services.FindeksService;
+﻿namespace Modules.BaseApplication.Services.FindeksService;
 
 public interface IFindeksService
 {

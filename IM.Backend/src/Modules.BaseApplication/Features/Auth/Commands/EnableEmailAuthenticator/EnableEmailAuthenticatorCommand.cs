@@ -1,14 +1,14 @@
 ﻿using System.Web;
-using Application.Features.Auth.Rules;
-using Application.Services.AuthenticatorService;
-using Application.Services.UserService;
 using Core.Domain.Entities.Security;
 using Core.Domain.Enums;
 using Core.Infrastructure.Mailing;
 using MediatR;
 using MimeKit;
+using Modules.BaseApplication.Features.Auth.Rules;
+using Modules.BaseApplication.Services.AuthenticatorService;
+using Modules.BaseApplication.Services.UserService;
 
-namespace Application.Features.Auth.Commands.EnableEmailAuthenticator;
+namespace Modules.BaseApplication.Features.Auth.Commands.EnableEmailAuthenticator;
 
 public class EnableEmailAuthenticatorCommand : IRequest
 {

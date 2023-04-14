@@ -1,7 +1,7 @@
-using Application.Dtos;
 using Core.Domain.Enums;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.RentalBranches.Commands.Create;
+namespace Modules.BaseApplication.Features.RentalBranches.Commands.Create;
 
 public class CreatedRentalBranchResponse : IDto
 {

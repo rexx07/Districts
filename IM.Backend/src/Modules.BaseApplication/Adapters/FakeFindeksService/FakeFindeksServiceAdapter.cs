@@ -1,6 +1,6 @@
-﻿using Application.Services.FindeksService;
+﻿using Modules.BaseApplication.Services.FindeksService;
 
-namespace Application.Adapters.FakeFindeksService;
+namespace Modules.BaseApplication.Adapters.FakeFindeksService;
 
 public class FakeFindeksServiceAdapter : IFindeksService
 {

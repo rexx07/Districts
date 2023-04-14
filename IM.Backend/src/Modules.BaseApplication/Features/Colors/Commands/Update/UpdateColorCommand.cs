@@ -1,13 +1,12 @@
-﻿using Application.Features.Colors.Constants;
-using Application.Features.Colors.Rules;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Colors.Constants.ColorsOperationClaims;
+using Modules.BaseApplication.Features.Colors.Constants;
+using Modules.BaseApplication.Features.Colors.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Colors.Constants.ColorsOperationClaims;
 
-namespace Application.Features.Colors.Commands.Update;
+namespace Modules.BaseApplication.Features.Colors.Commands.Update;
 
 public class UpdateColorCommand : IRequest<UpdatedColorResponse>, ISecuredRequest
 {

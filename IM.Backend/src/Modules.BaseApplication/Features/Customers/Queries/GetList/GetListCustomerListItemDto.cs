@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Customers.Queries.GetList;
+namespace Modules.BaseApplication.Features.Customers.Queries.GetList;
 
 public class GetListCustomerListItemDto : IDto
 {

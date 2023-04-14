@@ -4,7 +4,7 @@ public class Model : Entity
 {
     public Model()
     {
-        Cars = new HashSet<Car>();
+        Cars = new HashSet<Vehicle>();
     }
 
     public Model(int id, int brandId, int fuelId, int transmissionId, string name, decimal dailyPrice, string imageUrl)
@@ -27,7 +27,7 @@ public class Model : Entity
     public string ImageUrl { get; set; }
 
     public virtual Brand? Brand { get; set; }
-    public virtual ICollection<Car> Cars { get; set; }
+    public virtual ICollection<Vehicle> Cars { get; set; }
     public virtual Fuel? Fuel { get; set; }
     public virtual Transmission? Transmission { get; set; }
 }

@@ -1,12 +1,12 @@
-using Application.Features.CorporateCustomers.Rules;
-using Application.Pipelines.Authorization;
-using Application.Services.FindeksCreditRateService;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.CorporateCustomers.Constants.CorporateCustomersOperationClaims;
+using Modules.BaseApplication.Features.CorporateCustomers.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using Modules.BaseApplication.Services.FindeksCreditRateService;
+using static Modules.BaseApplication.Features.CorporateCustomers.Constants.CorporateCustomersOperationClaims;
 
-namespace Application.Features.CorporateCustomers.Commands.Create;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Commands.Create;
 
 public class CreateCorporateCustomerCommand : IRequest<CreatedCorporateCustomerResponse>, ISecuredRequest
 {

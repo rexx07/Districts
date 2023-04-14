@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities.Security;
 
-namespace Application.Services.AuthenticatorService;
+namespace Modules.BaseApplication.Services.AuthenticatorService;
 
 public interface IAuthenticatorService
 {

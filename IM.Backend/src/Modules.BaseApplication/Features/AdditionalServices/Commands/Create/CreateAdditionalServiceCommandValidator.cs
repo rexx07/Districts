@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.AdditionalServices.Commands.Create;
+namespace Modules.BaseApplication.Features.AdditionalServices.Commands.Create;
 
 public class CreateAdditionalServiceCommandValidator : AbstractValidator<CreateAdditionalServiceCommand>
 {

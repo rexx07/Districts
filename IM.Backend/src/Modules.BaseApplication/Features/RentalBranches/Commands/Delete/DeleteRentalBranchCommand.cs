@@ -1,12 +1,12 @@
-using Application.Features.RentalBranches.Constants;
-using Application.Features.RentalBranches.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.RentalBranches.Constants.RentalBranchesOperationClaims;
+using Modules.BaseApplication.Features.RentalBranches.Constants;
+using Modules.BaseApplication.Features.RentalBranches.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.RentalBranches.Constants.RentalBranchesOperationClaims;
 
-namespace Application.Features.RentalBranches.Commands.Delete;
+namespace Modules.BaseApplication.Features.RentalBranches.Commands.Delete;
 
 public class DeleteRentalBranchCommand : IRequest<DeletedRentalBranchResponse>, ISecuredRequest
 {

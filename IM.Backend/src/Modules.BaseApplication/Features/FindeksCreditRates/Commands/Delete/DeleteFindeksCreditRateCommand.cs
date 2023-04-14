@@ -1,11 +1,11 @@
-using Application.Features.FindeksCreditRates.Constants;
-using Application.Features.FindeksCreditRates.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.FindeksCreditRates.Constants;
+using Modules.BaseApplication.Features.FindeksCreditRates.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
 
-namespace Application.Features.FindeksCreditRates.Commands.Delete;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Commands.Delete;
 
 public class DeleteFindeksCreditRateCommand : IRequest<DeletedFindeksCreditRateResponse>, ISecuredRequest
 {

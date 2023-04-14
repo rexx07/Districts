@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Transmissions.Queries.GetList;
+namespace Modules.BaseApplication.Features.Transmissions.Queries.GetList;
 
 public class GetListTransmissionListItemDto : IDto
 {

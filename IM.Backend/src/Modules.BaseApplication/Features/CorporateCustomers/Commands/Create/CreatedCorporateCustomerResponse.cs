@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.CorporateCustomers.Commands.Create;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Commands.Create;
 
 public class CreatedCorporateCustomerResponse : IDto
 {

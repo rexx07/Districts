@@ -21,6 +21,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Modules.AirTransport\Modules.AirTransport.csproj" />
+		<ProjectReference Include="..\Modules.PassengerAndCargo\Modules.PassengerAndCargo.csproj" />
 	  <ProjectReference Include="..\Modules.BaseApplication\Modules.BaseApplication.csproj" />
 	  <ProjectReference Include="..\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
 	</ItemGroup>

@@ -1,12 +1,11 @@
-﻿using Application.Pipelines.Caching;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
+using Modules.BaseApplication.Pipelines.Caching;
 
-namespace Application.Features.Brands.Queries.GetList;
+namespace Modules.BaseApplication.Features.Brands.Queries.GetList;
 
 public class GetListBrandQuery : IRequest<GetListResponse<GetListBrandListItemDto>>, ICachableRequest
 {

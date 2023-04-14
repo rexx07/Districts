@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Transmissions.Commands.Delete;
+namespace Modules.BaseApplication.Features.Transmissions.Commands.Delete;
 
 public class DeletedTransmissionResponse : IDto
 {

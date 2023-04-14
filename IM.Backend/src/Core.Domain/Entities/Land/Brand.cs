@@ -1,6 +1,8 @@
-﻿namespace Core.Domain.Entities.Land;
+﻿using Core.Domain.Entities.BaseEntities;
 
-public class Brand : Entity
+namespace Core.Domain.Entities.Land;
+
+public record Brand : Aggregate<long>
 {
     public Brand()
     {

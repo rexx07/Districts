@@ -1,7 +1,7 @@
-﻿using Application.Features.Cars.Validations;
-using FluentValidation;
+﻿using FluentValidation;
+using Modules.BaseApplication.Features.Cars.Validations;
 
-namespace Application.Features.Cars.Commands.Create;
+namespace Modules.BaseApplication.Features.Cars.Commands.Create;
 
 public class CreateCarCommandValidator : AbstractValidator<CreateCarCommand>
 {

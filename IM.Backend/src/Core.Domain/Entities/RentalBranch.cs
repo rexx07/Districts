@@ -7,7 +7,7 @@ public class RentalBranch : Entity
 {
     public RentalBranch()
     {
-        Cars = new HashSet<Car>();
+        Cars = new HashSet<Vehicle>();
     }
 
     public RentalBranch(int id, City city)
@@ -19,5 +19,5 @@ public class RentalBranch : Entity
 
     public City City { get; set; }
 
-    public virtual ICollection<Car> Cars { get; set; }
+    public virtual ICollection<Vehicle> Cars { get; set; }
 }

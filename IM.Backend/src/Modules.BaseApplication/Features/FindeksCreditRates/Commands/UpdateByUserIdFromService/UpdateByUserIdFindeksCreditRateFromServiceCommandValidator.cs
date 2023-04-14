@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.FindeksCreditRates.Commands.UpdateByUserIdFromService;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Commands.UpdateByUserIdFromService;
 
 public class UpdateByUserIdFindeksCreditRateFromServiceCommandValidator
     : AbstractValidator<UpdateByUserIdFindeksCreditRateFromServiceCommand>

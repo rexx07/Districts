@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Colors.Commands.Create;
+namespace Modules.BaseApplication.Features.Colors.Commands.Create;
 
 public class CreatedColorResponse : IDto
 {

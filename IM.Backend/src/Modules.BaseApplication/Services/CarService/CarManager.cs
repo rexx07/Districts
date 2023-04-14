@@ -1,10 +1,10 @@
-﻿using Application.Services.RentalService;
-using Core.CrossCuttingConcerns.Exceptions.Types;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Domain.Enums;
+using Modules.BaseApplication.Services.RentalService;
 
-namespace Application.Services.CarService;
+namespace Modules.BaseApplication.Services.CarService;
 
 public class CarManager : ICarService
 {
@@ -17,27 +17,27 @@ public class CarManager : ICarService
         _rentalService = rentalService;
     }
 
-    public async Task<Car> GetById(int id)
+    public async Task<Vehicle> GetById(int id)
     {
-        Car car = await _carRepository.GetAsync(c => c.Id == id);
-        if (car == null)
-            throw new BusinessException("The car doesn't exist.");
-        return car;
+        Vehicle vehicle = await _carRepository.GetAsync(c => c.Id == id);
+        if (vehicle == null)
+            throw new BusinessException("The vehicle doesn't exist.");
+        return vehicle;
     }
 
-    public async Task<Car> PickUpCar(Rental rental)
+    public async Task<Vehicle> PickUpCar(Rental rental)
     {
-        Car carToBeUpdate = await _carRepository.GetAsync(c => c.Id == rental.CarId);
-        carToBeUpdate.Kilometer += Convert.ToInt32(rental.RentEndKilometer - rental.RentStartKilometer);
-        carToBeUpdate.CarState = CarState.Available;
-        Car updatedCar = await _carRepository.UpdateAsync(carToBeUpdate);
-        return updatedCar;
+        Vehicle vehicleToBeUpdate = await _carRepository.GetAsync(c => c.Id == rental.CarId);
+        vehicleToBeUpdate.Kilometer += Convert.ToInt32(rental.RentEndKilometer - rental.RentStartKilometer);
+        vehicleToBeUpdate.CarState = VehicleState.Available;
+        Vehicle updatedVehicle = await _carRepository.UpdateAsync(vehicleToBeUpdate);
+        return updatedVehicle;
     }
 
-    public async Task<Car?> GetAvailableCarToRent(int modelId, int rentStartRentalBranch, DateTime rentStartDate,
+    public async Task<Vehicle?> GetAvailableCarToRent(int modelId, int rentStartRentalBranch, DateTime rentStartDate,
                                                   DateTime rentEndDate)
     {
-        Car? carToFind = await _carRepository.GetAsync(
+        Vehicle? carToFind = await _carRepository.GetAsync(
                              predicate: c =>
                                  c.ModelId == modelId
                               && c.RentalBranchId == rentStartRentalBranch
@@ -46,6 +46,6 @@ public class CarManager : ICarService
                          );
         if (carToFind != null)
             return carToFind;
-        throw new BusinessException("Available car doesn't exist.");
+        throw new BusinessException("Available vehicle doesn't exist.");
     }
 }

@@ -1,10 +1,10 @@
-using Application.Features.Auth.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Security;
 using Core.Infrastructure.Rules;
 using Core.Infrastructure.Security.Hashing;
+using Modules.BaseApplication.Features.Auth.Constants;
 
-namespace Application.Features.Users.Rules;
+namespace Modules.BaseApplication.Features.Users.Rules;
 
 public class UserBusinessRules : BaseBusinessRules
 {

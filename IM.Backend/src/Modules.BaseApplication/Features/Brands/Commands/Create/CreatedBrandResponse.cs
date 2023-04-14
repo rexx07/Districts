@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Brands.Commands.Create;
+﻿namespace Modules.BaseApplication.Features.Brands.Commands.Create;
 
 public class CreatedBrandResponse
 {

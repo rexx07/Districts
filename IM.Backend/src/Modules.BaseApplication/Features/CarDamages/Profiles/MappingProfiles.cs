@@ -1,42 +1,41 @@
-using Application.Features.CarDamages.Commands.Create;
-using Application.Features.CarDamages.Commands.Delete;
-using Application.Features.CarDamages.Commands.Update;
-using Application.Features.CarDamages.Queries.GetById;
-using Application.Features.CarDamages.Queries.GetList;
-using Application.Features.CarDamages.Queries.GetListByCarId;
 using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.CarDamages.Commands.Create;
+using Modules.BaseApplication.Features.CarDamages.Commands.Delete;
+using Modules.BaseApplication.Features.CarDamages.Commands.Update;
+using Modules.BaseApplication.Features.CarDamages.Queries.GetById;
+using Modules.BaseApplication.Features.CarDamages.Queries.GetList;
+using Modules.BaseApplication.Features.CarDamages.Queries.GetListByCarId;
 
-namespace Application.Features.CarDamages.Profiles;
+namespace Modules.BaseApplication.Features.CarDamages.Profiles;
 
 public class MappingProfiles : Profile
 {
     public MappingProfiles()
     {
-        CreateMap<CarDamage, CreateCarDamageCommand>().ReverseMap();
-        CreateMap<CarDamage, CreatedCarDamageResponse>().ReverseMap();
-        CreateMap<CarDamage, UpdateCarDamageCommand>().ReverseMap();
-        CreateMap<CarDamage, UpdatedCarDamageResponse>().ReverseMap();
-        CreateMap<CarDamage, DeleteCarDamageCommand>().ReverseMap();
-        CreateMap<CarDamage, DeletedCarDamageResponse>().ReverseMap();
-        CreateMap<CarDamage, GetByIdCarDamageResponse>().ReverseMap();
-        CreateMap<CarDamage, GetListCarDamageListItemDto>()
+        CreateMap<VehicleDamage, CreateCarDamageCommand>().ReverseMap();
+        CreateMap<VehicleDamage, CreatedCarDamageResponse>().ReverseMap();
+        CreateMap<VehicleDamage, UpdateCarDamageCommand>().ReverseMap();
+        CreateMap<VehicleDamage, UpdatedCarDamageResponse>().ReverseMap();
+        CreateMap<VehicleDamage, DeleteCarDamageCommand>().ReverseMap();
+        CreateMap<VehicleDamage, DeletedCarDamageResponse>().ReverseMap();
+        CreateMap<VehicleDamage, GetByIdCarDamageResponse>().ReverseMap();
+        CreateMap<VehicleDamage, GetListCarDamageListItemDto>()
             .ForMember(destinationMember: c => c.CarModelBrandName,
                        memberOptions: opt => opt.MapFrom(c => c.Car.Model.Brand.Name))
             .ForMember(destinationMember: c => c.CarModelName, memberOptions: opt => opt.MapFrom(c => c.Car.Model.Name))
             .ForMember(destinationMember: c => c.CarModelYear, memberOptions: opt => opt.MapFrom(c => c.Car.ModelYear))
             .ForMember(destinationMember: c => c.CarPlate, memberOptions: opt => opt.MapFrom(c => c.Car.Plate))
             .ReverseMap();
-        CreateMap<IPaginate<CarDamage>, GetListResponse<GetListCarDamageListItemDto>>().ReverseMap();
-        CreateMap<CarDamage, GetListByCarIdCarDamageListItemDto>()
+        CreateMap<IPaginate<VehicleDamage>, GetListResponse<GetListCarDamageListItemDto>>().ReverseMap();
+        CreateMap<VehicleDamage, GetListByCarIdCarDamageListItemDto>()
             .ForMember(destinationMember: c => c.CarModelBrandName,
                        memberOptions: opt => opt.MapFrom(c => c.Car.Model.Brand.Name))
             .ForMember(destinationMember: c => c.CarModelName, memberOptions: opt => opt.MapFrom(c => c.Car.Model.Name))
             .ForMember(destinationMember: c => c.CarModelYear, memberOptions: opt => opt.MapFrom(c => c.Car.ModelYear))
             .ForMember(destinationMember: c => c.CarPlate, memberOptions: opt => opt.MapFrom(c => c.Car.Plate))
             .ReverseMap();
-        CreateMap<IPaginate<CarDamage>, GetListResponse<GetListByCarIdCarDamageListItemDto>>().ReverseMap();
+        CreateMap<IPaginate<VehicleDamage>, GetListResponse<GetListByCarIdCarDamageListItemDto>>().ReverseMap();
     }
 }

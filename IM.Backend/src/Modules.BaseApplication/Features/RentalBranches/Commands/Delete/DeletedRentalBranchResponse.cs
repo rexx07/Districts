@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.RentalBranches.Commands.Delete;
+namespace Modules.BaseApplication.Features.RentalBranches.Commands.Delete;
 
 public class DeletedRentalBranchResponse : IDto
 {

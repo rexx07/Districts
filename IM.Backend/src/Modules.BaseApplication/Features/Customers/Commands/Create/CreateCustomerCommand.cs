@@ -1,11 +1,11 @@
-using Application.Features.Customers.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.Customers.Constants.CustomersOperationClaims;
+using Modules.BaseApplication.Features.Customers.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Customers.Constants.CustomersOperationClaims;
 
-namespace Application.Features.Customers.Commands.Create;
+namespace Modules.BaseApplication.Features.Customers.Commands.Create;
 
 public class CreateCustomerCommand : IRequest<CreatedCustomerResponse>, ISecuredRequest
 {

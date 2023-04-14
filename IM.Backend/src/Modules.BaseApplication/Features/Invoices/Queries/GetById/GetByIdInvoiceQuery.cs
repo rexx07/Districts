@@ -1,9 +1,9 @@
-using Application.Features.Invoices.Rules;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.Invoices.Rules;
 
-namespace Application.Features.Invoices.Queries.GetById;
+namespace Modules.BaseApplication.Features.Invoices.Queries.GetById;
 
 public class GetByIdInvoiceQuery : IRequest<GetByIdInvoiceResponse>
 {

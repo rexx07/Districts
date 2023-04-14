@@ -1,14 +1,13 @@
-﻿using Application.Features.Fuels.Commands.Create;
-using Application.Features.Fuels.Commands.Delete;
-using Application.Features.Fuels.Commands.Update;
-using Application.Features.Fuels.Queries.GetById;
-using Application.Features.Fuels.Queries.GetList;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Fuels.Commands.Create;
+using Modules.BaseApplication.Features.Fuels.Commands.Delete;
+using Modules.BaseApplication.Features.Fuels.Commands.Update;
+using Modules.BaseApplication.Features.Fuels.Queries.GetById;
+using Modules.BaseApplication.Features.Fuels.Queries.GetList;
 
-namespace Application.Features.Fuels.Profiles;
+namespace Modules.BaseApplication.Features.Fuels.Profiles;
 
 public class MappingProfiles : Profile
 {

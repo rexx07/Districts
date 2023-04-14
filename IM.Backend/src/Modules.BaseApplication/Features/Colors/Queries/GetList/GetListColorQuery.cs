@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Colors.Queries.GetList;
+namespace Modules.BaseApplication.Features.Colors.Queries.GetList;
 
 public class GetListColorQuery : IRequest<GetListResponse<GetListColorListItemDto>>
 {

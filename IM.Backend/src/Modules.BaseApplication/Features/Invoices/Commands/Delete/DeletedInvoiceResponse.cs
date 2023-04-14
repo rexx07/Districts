@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Invoices.Commands.Delete;
+namespace Modules.BaseApplication.Features.Invoices.Commands.Delete;
 
 public class DeletedInvoiceResponse : IDto
 {

@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.OperationClaims.Commands.Delete;
+namespace Modules.BaseApplication.Features.OperationClaims.Commands.Delete;
 
 public class DeletedOperationClaimResponse : IDto
 {

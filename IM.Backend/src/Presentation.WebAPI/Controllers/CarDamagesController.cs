@@ -1,12 +1,12 @@
-﻿using Application.Features.CarDamages.Commands.Create;
-using Application.Features.CarDamages.Commands.Delete;
-using Application.Features.CarDamages.Commands.Update;
-using Application.Features.CarDamages.Queries.GetById;
-using Application.Features.CarDamages.Queries.GetList;
-using Application.Features.CarDamages.Queries.GetListByCarId;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.CarDamages.Commands.Create;
+using Modules.BaseApplication.Features.CarDamages.Commands.Delete;
+using Modules.BaseApplication.Features.CarDamages.Commands.Update;
+using Modules.BaseApplication.Features.CarDamages.Queries.GetById;
+using Modules.BaseApplication.Features.CarDamages.Queries.GetList;
+using Modules.BaseApplication.Features.CarDamages.Queries.GetListByCarId;
 
 namespace Presentation.WebAPI.Controllers;
 

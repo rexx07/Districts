@@ -1,13 +1,13 @@
-using Application.Features.Users.Constants;
-using Application.Features.Users.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using Core.Infrastructure.Security.Hashing;
 using MediatR;
-using static Application.Features.Users.Constants.UsersOperationClaims;
+using Modules.BaseApplication.Features.Users.Constants;
+using Modules.BaseApplication.Features.Users.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Users.Constants.UsersOperationClaims;
 
-namespace Application.Features.Users.Commands.Update;
+namespace Modules.BaseApplication.Features.Users.Commands.Update;
 
 public class UpdateUserCommand : IRequest<UpdatedUserResponse>, ISecuredRequest
 {

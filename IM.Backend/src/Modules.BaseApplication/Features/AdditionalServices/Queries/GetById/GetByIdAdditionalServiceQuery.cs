@@ -1,9 +1,9 @@
-using Application.Features.AdditionalServices.Rules;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.AdditionalServices.Rules;
 
-namespace Application.Features.AdditionalServices.Queries.GetById;
+namespace Modules.BaseApplication.Features.AdditionalServices.Queries.GetById;
 
 public class GetByIdAdditionalServiceQuery : IRequest<GetByIdAdditionalServiceResponse>
 {

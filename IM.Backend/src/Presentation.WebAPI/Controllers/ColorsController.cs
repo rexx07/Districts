@@ -1,11 +1,11 @@
-﻿using Application.Features.Colors.Commands.Create;
-using Application.Features.Colors.Commands.Delete;
-using Application.Features.Colors.Commands.Update;
-using Application.Features.Colors.Queries.GetById;
-using Application.Features.Colors.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Colors.Commands.Create;
+using Modules.BaseApplication.Features.Colors.Commands.Delete;
+using Modules.BaseApplication.Features.Colors.Commands.Update;
+using Modules.BaseApplication.Features.Colors.Queries.GetById;
+using Modules.BaseApplication.Features.Colors.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

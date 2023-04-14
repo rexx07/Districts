@@ -1,9 +1,9 @@
-﻿using Application.Dtos;
-using Core.Domain.Entities.Security;
+﻿using Core.Domain.Entities.Security;
 using Core.Domain.Enums;
 using Core.Infrastructure.Security.JWT;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Auth.Commands.Login;
+namespace Modules.BaseApplication.Features.Auth.Commands.Login;
 
 public class LoggedResponse : IDto
 {

@@ -1,14 +1,13 @@
-﻿using Application.Features.Cars.Constants;
-using Application.Features.Cars.Rules;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Domain.Enums;
 using MediatR;
-using static Application.Features.Cars.Constants.CarsOperationClaims;
+using Modules.BaseApplication.Features.Cars.Constants;
+using Modules.BaseApplication.Features.Cars.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Cars.Constants.CarsOperationClaims;
 
-namespace Application.Features.Cars.Commands.DeliverRental;
+namespace Modules.BaseApplication.Features.Cars.Commands.DeliverRental;
 
 public class DeliverRentalCarCommand : IRequest<DeliveredCarResponse>, ISecuredRequest
 {
@@ -37,8 +36,8 @@ public class DeliverRentalCarCommand : IRequest<DeliveredCarResponse>, ISecuredR
             await _carBusinessRules.CarCanNotBeRentWhenIsInMaintenance(request.Id);
             await _carBusinessRules.CarCanNotBeMaintainWhenIsRented(request.Id);
 
-            Car? updatedCar = await _carRepository.GetAsync(c => c.Id == request.Id);
-            updatedCar.CarState = CarState.Rented;
+            Vehicle? updatedCar = await _carRepository.GetAsync(c => c.Id == request.Id);
+            updatedCar.CarState = VehicleState.Rented;
             await _carRepository.UpdateAsync(updatedCar);
             DeliveredCarResponse? updatedCarDto = _mapper.Map<DeliveredCarResponse>(updatedCar);
             return updatedCarDto;

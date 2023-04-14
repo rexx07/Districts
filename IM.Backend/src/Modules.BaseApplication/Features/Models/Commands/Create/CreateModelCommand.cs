@@ -1,13 +1,12 @@
-﻿using Application.Features.Models.Rules;
-using Application.Pipelines.Authorization;
-using Application.Pipelines.Caching;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Models.Constants.ModelsOperationClaims;
+using Modules.BaseApplication.Features.Models.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using Modules.BaseApplication.Pipelines.Caching;
+using static Modules.BaseApplication.Features.Models.Constants.ModelsOperationClaims;
 
-namespace Application.Features.Models.Commands.Create;
+namespace Modules.BaseApplication.Features.Models.Commands.Create;
 
 public class CreateModelCommand : IRequest<CreatedModelResponse>, ISecuredRequest, ICacheRemoverRequest
 {

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Invoices.Commands.Update;
+namespace Modules.BaseApplication.Features.Invoices.Commands.Update;
 
 public class UpdateInvoiceCommandValidator : AbstractValidator<UpdateInvoiceCommand>
 {

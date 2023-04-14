@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Colors.Queries.GetById;
+namespace Modules.BaseApplication.Features.Colors.Queries.GetById;
 
 public class GetByIdColorResponse : IDto
 {

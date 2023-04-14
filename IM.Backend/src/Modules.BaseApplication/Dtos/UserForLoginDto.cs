@@ -1,4 +1,4 @@
-﻿namespace Application.Dtos;
+﻿namespace Modules.BaseApplication.Dtos;
 
 public class UserForLoginDto : IDto
 {

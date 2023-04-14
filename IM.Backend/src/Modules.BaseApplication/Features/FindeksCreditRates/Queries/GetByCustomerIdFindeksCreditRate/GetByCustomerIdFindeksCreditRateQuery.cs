@@ -1,9 +1,9 @@
-﻿using Application.Features.FindeksCreditRates.Rules;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.FindeksCreditRates.Rules;
 
-namespace Application.Features.FindeksCreditRates.Queries.GetByCustomerIdFindeksCreditRate;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetByCustomerIdFindeksCreditRate;
 
 public class GetByCustomerIdFindeksCreditRateQuery : IRequest<GetByCustomerIdFindeksCreditRateResponse>
 {

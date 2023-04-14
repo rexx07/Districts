@@ -1,10 +1,9 @@
-using Application.Features.CarDamages.Rules;
 using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.CarDamages.Rules;
 
-namespace Application.Features.CarDamages.Queries.GetById;
+namespace Modules.BaseApplication.Features.CarDamages.Queries.GetById;
 
 public class GetByIdCarDamageQuery : IRequest<GetByIdCarDamageResponse>
 {
@@ -32,7 +31,7 @@ public class GetByIdCarDamageQuery : IRequest<GetByIdCarDamageResponse>
         {
             await _carDamageBusinessRules.CarDamageIdShouldExistWhenSelected(request.Id);
 
-            CarDamage? carDamage = await _carDamageRepository.GetAsync(b => b.Id == request.Id);
+            VehicleDamage? carDamage = await _carDamageRepository.GetAsync(b => b.Id == request.Id);
             GetByIdCarDamageResponse carDamageDto = _mapper.Map<GetByIdCarDamageResponse>(carDamage);
             return carDamageDto;
         }

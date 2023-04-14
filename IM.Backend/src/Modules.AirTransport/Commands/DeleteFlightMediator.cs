@@ -12,7 +12,7 @@ namespace Modules.AirTransport.Commands;
 
 public sealed record DeleteFlightCommand(long Id) : ICommand<FlightResponseDto>;
 
-public sealed class DeleteFlightCommandHandler : IRequestHandler<DeleteFlightCommand, FlightResponseDto>
+public sealed class DeleteFlightCommandHandler : ICommandHandler<DeleteFlightCommand, FlightResponseDto>
 {
     private readonly IAirRepositoryManager _airRepositoryManager;
     private readonly IMapper _mapper;

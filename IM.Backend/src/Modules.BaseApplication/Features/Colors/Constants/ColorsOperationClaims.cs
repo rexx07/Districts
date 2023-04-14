@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Colors.Constants;
+﻿namespace Modules.BaseApplication.Features.Colors.Constants;
 
 public static class ColorsOperationClaims
 {

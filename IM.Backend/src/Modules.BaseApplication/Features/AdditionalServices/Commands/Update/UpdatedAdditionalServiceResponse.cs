@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.AdditionalServices.Commands.Update;
+namespace Modules.BaseApplication.Features.AdditionalServices.Commands.Update;
 
 public class UpdatedAdditionalServiceResponse : IDto
 {

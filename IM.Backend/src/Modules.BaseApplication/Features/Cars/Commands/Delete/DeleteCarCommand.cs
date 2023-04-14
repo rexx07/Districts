@@ -1,12 +1,11 @@
-﻿using Application.Features.Cars.Constants;
-using Application.Pipelines.Authorization;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
-using static Application.Features.Cars.Constants.CarsOperationClaims;
+using Modules.BaseApplication.Features.Cars.Constants;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Cars.Constants.CarsOperationClaims;
 
-namespace Application.Features.Cars.Commands.Delete;
+namespace Modules.BaseApplication.Features.Cars.Commands.Delete;
 
 public class DeleteCarCommand : IRequest<DeletedCarResponse>, ISecuredRequest
 {
@@ -28,9 +27,9 @@ public class DeleteCarCommand : IRequest<DeletedCarResponse>, ISecuredRequest
 
         public async Task<DeletedCarResponse> Handle(DeleteCarCommand request, CancellationToken cancellationToken)
         {
-            Car mappedCar = _mapper.Map<Car>(request);
-            Car deletedCar = await _carRepository.DeleteAsync(mappedCar);
-            DeletedCarResponse deletedCarDto = _mapper.Map<DeletedCarResponse>(deletedCar);
+            Vehicle mappedVehicle = _mapper.Map<Vehicle>(request);
+            Vehicle deletedVehicle = await _carRepository.DeleteAsync(mappedVehicle);
+            DeletedCarResponse deletedCarDto = _mapper.Map<DeletedCarResponse>(deletedVehicle);
             return deletedCarDto;
         }
     }

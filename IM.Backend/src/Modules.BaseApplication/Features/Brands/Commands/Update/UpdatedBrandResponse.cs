@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Brands.Commands.Update;
+﻿namespace Modules.BaseApplication.Features.Brands.Commands.Update;
 
 public class UpdatedBrandResponse
 {

@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Transmissions.Commands.Update;
+namespace Modules.BaseApplication.Features.Transmissions.Commands.Update;
 
 public class UpdatedTransmissionResponse : IDto
 {

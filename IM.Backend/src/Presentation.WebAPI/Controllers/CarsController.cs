@@ -1,15 +1,15 @@
-﻿using Application.Features.Cars.Commands.Create;
-using Application.Features.Cars.Commands.Delete;
-using Application.Features.Cars.Commands.DeliverRental;
-using Application.Features.Cars.Commands.Maintain;
-using Application.Features.Cars.Commands.Update;
-using Application.Features.Cars.Queries.GetById;
-using Application.Features.Cars.Queries.GetList;
-using Application.Features.Cars.Queries.GetListByDynamic;
-using Core.Infrastructure.Persistence.Dynamic;
+﻿using Core.Infrastructure.Persistence.Dynamic;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Cars.Commands.Create;
+using Modules.BaseApplication.Features.Cars.Commands.Delete;
+using Modules.BaseApplication.Features.Cars.Commands.DeliverRental;
+using Modules.BaseApplication.Features.Cars.Commands.Maintain;
+using Modules.BaseApplication.Features.Cars.Commands.Update;
+using Modules.BaseApplication.Features.Cars.Queries.GetById;
+using Modules.BaseApplication.Features.Cars.Queries.GetList;
+using Modules.BaseApplication.Features.Cars.Queries.GetListByDynamic;
 
 namespace Presentation.WebAPI.Controllers;
 

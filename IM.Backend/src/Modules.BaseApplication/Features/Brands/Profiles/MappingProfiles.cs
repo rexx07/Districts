@@ -1,14 +1,13 @@
-﻿using Application.Features.Brands.Commands.Create;
-using Application.Features.Brands.Commands.Delete;
-using Application.Features.Brands.Commands.Update;
-using Application.Features.Brands.Queries.GetById;
-using Application.Features.Brands.Queries.GetList;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Brands.Commands.Create;
+using Modules.BaseApplication.Features.Brands.Commands.Delete;
+using Modules.BaseApplication.Features.Brands.Commands.Update;
+using Modules.BaseApplication.Features.Brands.Queries.GetById;
+using Modules.BaseApplication.Features.Brands.Queries.GetList;
 
-namespace Application.Features.Brands.Profiles;
+namespace Modules.BaseApplication.Features.Brands.Profiles;
 
 public class MappingProfiles : Profile
 {

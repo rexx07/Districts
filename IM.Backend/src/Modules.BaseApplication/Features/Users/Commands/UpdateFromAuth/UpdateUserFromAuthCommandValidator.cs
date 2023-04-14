@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Users.Commands.UpdateFromAuth;
+namespace Modules.BaseApplication.Features.Users.Commands.UpdateFromAuth;
 
 public class UpdateUserFromAuthCommandValidator : AbstractValidator<UpdateUserFromAuthCommand>
 {

@@ -1,10 +1,9 @@
-﻿using Application.Features.Brands.Rules;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Brands.Rules;
 
-namespace Application.Features.Brands.Queries.GetById;
+namespace Modules.BaseApplication.Features.Brands.Queries.GetById;
 
 public class GetByIdBrandQuery : IRequest<GetByIdBrandResponse>
 {

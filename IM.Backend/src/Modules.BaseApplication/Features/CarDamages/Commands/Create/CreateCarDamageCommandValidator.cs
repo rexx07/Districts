@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.CarDamages.Commands.Create;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Create;
 
 public class CreateCarDamageCommandValidator : AbstractValidator<CreateCarDamageCommand>
 {

@@ -1,4 +1,4 @@
-﻿namespace Application.Features.CarDamages.Constants;
+﻿namespace Modules.BaseApplication.Features.CarDamages.Constants;
 
 public static class CarDamagesOperationClaims
 {

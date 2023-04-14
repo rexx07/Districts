@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities;
 
-namespace Application.Services.RentalService;
+namespace Modules.BaseApplication.Services.RentalService;
 
 public class RentalManager : IRentalService
 {

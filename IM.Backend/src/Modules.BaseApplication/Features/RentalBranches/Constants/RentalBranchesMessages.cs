@@ -1,4 +1,4 @@
-namespace Application.Features.RentalBranches.Constants;
+namespace Modules.BaseApplication.Features.RentalBranches.Constants;
 
 public static class RentalBranchesMessages
 {

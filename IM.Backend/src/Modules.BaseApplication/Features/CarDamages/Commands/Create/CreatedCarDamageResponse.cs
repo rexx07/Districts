@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.CarDamages.Commands.Create;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Create;
 
 public class CreatedCarDamageResponse : IDto
 {

@@ -1,8 +1,8 @@
-﻿using Application.Features.Auth.Rules;
-using Core.Domain.Entities.Security;
+﻿using Core.Domain.Entities.Security;
 using MediatR;
+using Modules.BaseApplication.Features.Auth.Rules;
 
-namespace Application.Features.Auth.Commands.VerifyEmailAuthenticator;
+namespace Modules.BaseApplication.Features.Auth.Commands.VerifyEmailAuthenticator;
 
 public class VerifyEmailAuthenticatorCommand : IRequest
 {

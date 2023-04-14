@@ -1,12 +1,12 @@
-using Application.Features.IndividualCustomers.Constants;
-using Application.Features.IndividualCustomers.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.IndividualCustomers.Constants.IndividualCustomersOperationClaims;
+using Modules.BaseApplication.Features.IndividualCustomers.Constants;
+using Modules.BaseApplication.Features.IndividualCustomers.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.IndividualCustomers.Constants.IndividualCustomersOperationClaims;
 
-namespace Application.Features.IndividualCustomers.Commands.Update;
+namespace Modules.BaseApplication.Features.IndividualCustomers.Commands.Update;
 
 public class UpdateIndividualCustomerCommand : IRequest<UpdatedIndividualCustomerResponse>, ISecuredRequest
 {

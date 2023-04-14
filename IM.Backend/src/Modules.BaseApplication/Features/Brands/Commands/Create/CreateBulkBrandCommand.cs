@@ -1,9 +1,8 @@
-﻿using Application.Features.Brands.Rules;
-using Core.Domain.Entities;
-using Core.Domain.Entities.Land;
+﻿using Core.Domain.Entities.Land;
 using MediatR;
+using Modules.BaseApplication.Features.Brands.Rules;
 
-namespace Application.Features.Brands.Commands.Create;
+namespace Modules.BaseApplication.Features.Brands.Commands.Create;
 
 public class CreateBulkBrandCommand : IRequest<List<CreatedBrandResponse>>
 {

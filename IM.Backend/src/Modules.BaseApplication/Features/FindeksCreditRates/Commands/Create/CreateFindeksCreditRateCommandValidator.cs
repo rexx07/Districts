@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.FindeksCreditRates.Commands.Create;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Commands.Create;
 
 public class CreateFindeksCreditRateCommandValidator : AbstractValidator<CreateFindeksCreditRateCommand>
 {

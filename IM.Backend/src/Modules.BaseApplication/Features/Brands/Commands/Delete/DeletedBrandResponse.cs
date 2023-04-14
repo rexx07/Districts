@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Brands.Commands.Delete;
+﻿namespace Modules.BaseApplication.Features.Brands.Commands.Delete;
 
 public class DeletedBrandResponse
 {

@@ -1,10 +1,10 @@
-using Application.Features.AdditionalServices.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.AdditionalServices.Constants;
 
-namespace Application.Features.AdditionalServices.Rules;
+namespace Modules.BaseApplication.Features.AdditionalServices.Rules;
 
 public class AdditionalServiceBusinessRules : BaseBusinessRules
 {

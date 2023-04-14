@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Invoices.Queries.GetById;
+namespace Modules.BaseApplication.Features.Invoices.Queries.GetById;
 
 public class GetByIdInvoiceResponse : IDto
 {

@@ -1,12 +1,12 @@
-using Application.Features.Invoices.Constants;
-using Application.Features.Invoices.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
-using static Application.Features.Invoices.Constants.InvoicesOperationClaims;
+using Modules.BaseApplication.Features.Invoices.Constants;
+using Modules.BaseApplication.Features.Invoices.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.Invoices.Constants.InvoicesOperationClaims;
 
-namespace Application.Features.Invoices.Commands.Delete;
+namespace Modules.BaseApplication.Features.Invoices.Commands.Delete;
 
 public class DeleteInvoiceCommand : IRequest<DeletedInvoiceResponse>, ISecuredRequest
 {

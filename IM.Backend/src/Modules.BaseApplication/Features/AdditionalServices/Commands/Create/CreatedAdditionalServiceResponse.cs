@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.AdditionalServices.Commands.Create;
+namespace Modules.BaseApplication.Features.AdditionalServices.Commands.Create;
 
 public class CreatedAdditionalServiceResponse : IDto
 {

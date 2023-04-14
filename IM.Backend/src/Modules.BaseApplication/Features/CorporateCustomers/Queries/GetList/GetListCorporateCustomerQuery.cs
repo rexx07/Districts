@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.CorporateCustomers.Queries.GetList;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Queries.GetList;
 
 public class GetListCorporateCustomerQuery : IRequest<GetListResponse<GetListCorporateCustomerListItemDto>>
 {

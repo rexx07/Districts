@@ -1,8 +1,7 @@
 ﻿using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 
-namespace Application.Services.ModelService;
+namespace Modules.BaseApplication.Services.ModelService;
 
 public class ModelManager : IModelService
 {

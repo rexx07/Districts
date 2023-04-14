@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.CorporateCustomers.Commands.Update;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Commands.Update;
 
 public class UpdateCorporateCustomerCommandValidator : AbstractValidator<UpdateCorporateCustomerCommand>
 {

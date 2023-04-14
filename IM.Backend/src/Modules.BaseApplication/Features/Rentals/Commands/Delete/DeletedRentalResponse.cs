@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Rentals.Commands.Delete;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Delete;
 
 public class DeletedRentalResponse : IDto
 {

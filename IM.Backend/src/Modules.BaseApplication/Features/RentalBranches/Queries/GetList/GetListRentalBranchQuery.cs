@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.RentalBranches.Queries.GetList;
+namespace Modules.BaseApplication.Features.RentalBranches.Queries.GetList;
 
 public class GetListRentalBranchQuery : IRequest<GetListResponse<GetListRentalBranchListItemDto>>
 {

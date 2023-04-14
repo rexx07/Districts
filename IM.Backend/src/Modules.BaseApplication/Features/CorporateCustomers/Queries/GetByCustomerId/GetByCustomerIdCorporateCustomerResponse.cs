@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.CorporateCustomers.Queries.GetByCustomerId;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Queries.GetByCustomerId;
 
 public class GetByCustomerIdCorporateCustomerResponse : IDto
 {

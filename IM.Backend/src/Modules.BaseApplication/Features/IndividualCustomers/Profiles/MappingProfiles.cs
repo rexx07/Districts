@@ -1,14 +1,14 @@
-using Application.Features.CorporateCustomers.Queries.GetByCustomerId;
-using Application.Features.IndividualCustomers.Commands.Create;
-using Application.Features.IndividualCustomers.Commands.Delete;
-using Application.Features.IndividualCustomers.Commands.Update;
-using Application.Features.IndividualCustomers.Queries.GetById;
-using Application.Features.IndividualCustomers.Queries.GetList;
 using AutoMapper;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.CorporateCustomers.Queries.GetByCustomerId;
+using Modules.BaseApplication.Features.IndividualCustomers.Commands.Create;
+using Modules.BaseApplication.Features.IndividualCustomers.Commands.Delete;
+using Modules.BaseApplication.Features.IndividualCustomers.Commands.Update;
+using Modules.BaseApplication.Features.IndividualCustomers.Queries.GetById;
+using Modules.BaseApplication.Features.IndividualCustomers.Queries.GetList;
 
-namespace Application.Features.IndividualCustomers.Profiles;
+namespace Modules.BaseApplication.Features.IndividualCustomers.Profiles;
 
 public class MappingProfiles : Profile
 {

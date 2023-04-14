@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Rentals.Commands.Create;
+namespace Modules.BaseApplication.Features.Rentals.Commands.Create;
 
 public class CreatedRentalResponse : IDto
 {

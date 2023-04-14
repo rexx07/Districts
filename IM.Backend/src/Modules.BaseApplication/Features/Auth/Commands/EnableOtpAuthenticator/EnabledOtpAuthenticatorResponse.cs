@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Auth.Commands.EnableOtpAuthenticator;
+namespace Modules.BaseApplication.Features.Auth.Commands.EnableOtpAuthenticator;
 
 public class EnabledOtpAuthenticatorResponse : IDto
 {

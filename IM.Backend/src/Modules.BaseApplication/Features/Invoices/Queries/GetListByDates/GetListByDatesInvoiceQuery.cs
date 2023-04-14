@@ -3,7 +3,7 @@ using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
 using MediatR;
 
-namespace Application.Features.Invoices.Queries.GetListByDates;
+namespace Modules.BaseApplication.Features.Invoices.Queries.GetListByDates;
 
 public class GetListByDatesInvoiceQuery : IRequest<GetListResponse<GetListByDatesInvoiceListItemDto>>
 {

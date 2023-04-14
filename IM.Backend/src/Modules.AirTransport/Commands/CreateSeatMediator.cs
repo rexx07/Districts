@@ -17,7 +17,7 @@ public sealed record CreateSeatCommand(string SeatNumber, SeatType Type, SeatCla
     public long Id { get; init; } = SnowFlakIdGenerator.NewId();
 }
 
-public sealed class CreateSeatCommandHandler : IRequestHandler<CreateSeatCommand, SeatResponseDto>
+public sealed class CreateSeatCommandHandler : ICommandHandler<CreateSeatCommand, SeatResponseDto>
 {
     private readonly IAirRepositoryManager _airRepositoryManager;
     private readonly IMapper _mapper;

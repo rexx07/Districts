@@ -1,8 +1,8 @@
-﻿using Application.Features.Models.Commands.Create;
-using Application.Features.Models.Queries.GetList;
-using Core.Infrastructure.ElasticSearch;
+﻿using Core.Infrastructure.ElasticSearch;
 using Core.Infrastructure.ElasticSearch.Models;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Models.Commands.Create;
+using Modules.BaseApplication.Features.Models.Queries.GetList;
 using Nest;
 
 namespace Presentation.WebAPI.Controllers;

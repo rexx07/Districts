@@ -8,6 +8,4 @@ public static class AirOperationClaims
     public const string Add = "AirTransport.add";
     public const string Update = "AirTransport.update";
     public const string Delete = "AirTransport.delete";
-    
-    
 }

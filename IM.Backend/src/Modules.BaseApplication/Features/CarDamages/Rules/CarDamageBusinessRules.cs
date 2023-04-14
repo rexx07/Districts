@@ -1,10 +1,9 @@
-using Application.Features.CarDamages.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.CarDamages.Constants;
 
-namespace Application.Features.CarDamages.Rules;
+namespace Modules.BaseApplication.Features.CarDamages.Rules;
 
 public class CarDamageBusinessRules : BaseBusinessRules
 {
@@ -17,7 +16,7 @@ public class CarDamageBusinessRules : BaseBusinessRules
 
     public async Task CarDamageIdShouldExistWhenSelected(int id)
     {
-        CarDamage? result = await _carDamageRepository.GetAsync(predicate: b => b.Id == id, enableTracking: false);
+        VehicleDamage? result = await _carDamageRepository.GetAsync(predicate: b => b.Id == id, enableTracking: false);
         if (result == null)
             throw new BusinessException(CarDamagesMessages.CarDamageNotExists);
     }

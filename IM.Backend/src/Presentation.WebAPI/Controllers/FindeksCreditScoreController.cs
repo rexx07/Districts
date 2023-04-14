@@ -1,14 +1,14 @@
-﻿using Application.Features.FindeksCreditRates.Commands.Create;
-using Application.Features.FindeksCreditRates.Commands.Delete;
-using Application.Features.FindeksCreditRates.Commands.Update;
-using Application.Features.FindeksCreditRates.Commands.UpdateByUserIdFromService;
-using Application.Features.FindeksCreditRates.Commands.UpdateFromService;
-using Application.Features.FindeksCreditRates.Queries.GetByCustomerIdFindeksCreditRate;
-using Application.Features.FindeksCreditRates.Queries.GetByIdFindeksCreditRate;
-using Application.Features.FindeksCreditRates.Queries.GetListFindeksCreditRate;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.Create;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.Delete;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.Update;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.UpdateByUserIdFromService;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.UpdateFromService;
+using Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetByCustomerIdFindeksCreditRate;
+using Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetByIdFindeksCreditRate;
+using Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetListFindeksCreditRate;
 using Presentation.WebAPI.Controllers.Dtos;
 
 namespace Presentation.WebAPI.Controllers;

@@ -1,4 +1,4 @@
-namespace Application.Features.Invoices.Constants;
+namespace Modules.BaseApplication.Features.Invoices.Constants;
 
 public static class InvoicesMessages
 {

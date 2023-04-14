@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.IndividualCustomers.Commands.Update;
+namespace Modules.BaseApplication.Features.IndividualCustomers.Commands.Update;
 
 public class UpdatedIndividualCustomerResponse : IDto
 {

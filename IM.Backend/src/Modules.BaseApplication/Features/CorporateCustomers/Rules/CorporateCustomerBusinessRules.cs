@@ -1,10 +1,10 @@
-using Application.Features.CorporateCustomers.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.CorporateCustomers.Constants;
 
-namespace Application.Features.CorporateCustomers.Rules;
+namespace Modules.BaseApplication.Features.CorporateCustomers.Rules;
 
 public class CorporateCustomerBusinessRules : BaseBusinessRules
 {

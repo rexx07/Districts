@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Colors.Commands.Update;
+namespace Modules.BaseApplication.Features.Colors.Commands.Update;
 
 public class UpdateColorCommandValidator : AbstractValidator<UpdateColorCommand>
 {

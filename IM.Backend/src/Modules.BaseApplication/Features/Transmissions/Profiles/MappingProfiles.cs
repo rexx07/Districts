@@ -1,14 +1,13 @@
-﻿using Application.Features.Transmissions.Commands.Create;
-using Application.Features.Transmissions.Commands.Delete;
-using Application.Features.Transmissions.Commands.Update;
-using Application.Features.Transmissions.Queries.GetById;
-using Application.Features.Transmissions.Queries.GetList;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Transmissions.Commands.Create;
+using Modules.BaseApplication.Features.Transmissions.Commands.Delete;
+using Modules.BaseApplication.Features.Transmissions.Commands.Update;
+using Modules.BaseApplication.Features.Transmissions.Queries.GetById;
+using Modules.BaseApplication.Features.Transmissions.Queries.GetList;
 
-namespace Application.Features.Transmissions.Profiles;
+namespace Modules.BaseApplication.Features.Transmissions.Profiles;
 
 public class MappingProfiles : Profile
 {

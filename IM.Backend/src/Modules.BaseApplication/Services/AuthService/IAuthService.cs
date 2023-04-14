@@ -1,7 +1,7 @@
 ﻿using Core.Domain.Entities.Security;
 using Core.Infrastructure.Security.JWT;
 
-namespace Application.Services.AuthService;
+namespace Modules.BaseApplication.Services.AuthService;
 
 public interface IAuthService
 {

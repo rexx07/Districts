@@ -1,7 +1,6 @@
-﻿using Core.Domain.Entities;
-using Core.Domain.Entities.Land;
+﻿using Core.Domain.Entities.Land;
 
-namespace Application.Services.ModelService;
+namespace Modules.BaseApplication.Services.ModelService;
 
 public interface IModelService
 {

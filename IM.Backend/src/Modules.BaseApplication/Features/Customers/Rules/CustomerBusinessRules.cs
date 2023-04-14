@@ -1,9 +1,9 @@
-using Application.Features.Customers.Constants;
 using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Customers.Constants;
 
-namespace Application.Features.Customers.Rules;
+namespace Modules.BaseApplication.Features.Customers.Rules;
 
 public class CustomerBusinessRules : BaseBusinessRules
 {

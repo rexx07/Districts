@@ -1,4 +1,4 @@
-namespace Application.Features.IndividualCustomers.Constants;
+namespace Modules.BaseApplication.Features.IndividualCustomers.Constants;
 
 public static class IndividualCustomersMessages
 {

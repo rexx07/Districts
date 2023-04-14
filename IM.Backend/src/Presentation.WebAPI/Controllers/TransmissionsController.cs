@@ -1,11 +1,11 @@
-﻿using Application.Features.Transmissions.Commands.Create;
-using Application.Features.Transmissions.Commands.Delete;
-using Application.Features.Transmissions.Commands.Update;
-using Application.Features.Transmissions.Queries.GetById;
-using Application.Features.Transmissions.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Transmissions.Commands.Create;
+using Modules.BaseApplication.Features.Transmissions.Commands.Delete;
+using Modules.BaseApplication.Features.Transmissions.Commands.Update;
+using Modules.BaseApplication.Features.Transmissions.Queries.GetById;
+using Modules.BaseApplication.Features.Transmissions.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

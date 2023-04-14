@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.OperationClaims.Queries.GetById;
+namespace Modules.BaseApplication.Features.OperationClaims.Queries.GetById;
 
 public class GetByIdOperationClaimResponse : IDto
 {

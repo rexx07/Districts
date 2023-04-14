@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
-using Core.Domain.Entities;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Transmissions.Queries.GetList;
+namespace Modules.BaseApplication.Features.Transmissions.Queries.GetList;
 
 public class GetListTransmissionQuery : IRequest<GetListResponse<GetListTransmissionListItemDto>>
 {

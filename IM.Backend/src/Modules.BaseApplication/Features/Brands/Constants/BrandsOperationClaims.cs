@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Brands.Constants;
+﻿namespace Modules.BaseApplication.Features.Brands.Constants;
 
 public static class BrandsOperationClaims
 {

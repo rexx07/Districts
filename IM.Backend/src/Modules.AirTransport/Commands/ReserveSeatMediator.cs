@@ -12,7 +12,7 @@ namespace Modules.AirTransport.Commands;
 
 public sealed record ReserveSeatCommand(long FlightId, string SeatNumber) : ICommand<SeatResponseDto>;
 
-public sealed record ReserveSeatCommandHandler : IRequestHandler<ReserveSeatCommand, SeatResponseDto>
+public sealed record ReserveSeatCommandHandler : ICommandHandler<ReserveSeatCommand, SeatResponseDto>
 {
     private readonly IAirRepositoryManager _airRepositoryManager;
     private readonly IMapper _mapper;

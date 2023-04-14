@@ -1,11 +1,10 @@
-﻿using Application.Features.Colors.Constants;
-using Core.CrossCuttingConcerns.Exceptions.Types;
-using Core.Domain.Entities;
+﻿using Core.CrossCuttingConcerns.Exceptions.Types;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Rules;
+using Modules.BaseApplication.Features.Colors.Constants;
 
-namespace Application.Features.Colors.Rules;
+namespace Modules.BaseApplication.Features.Colors.Rules;
 
 public class ColorBusinessRules : BaseBusinessRules
 {

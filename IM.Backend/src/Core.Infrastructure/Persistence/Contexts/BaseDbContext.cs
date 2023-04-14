@@ -2,6 +2,7 @@
 using Core.Domain.Entities;
 using Core.Domain.Entities.Air;
 using Core.Domain.Entities.Land;
+using Core.Domain.Entities.PassengerAndCargo;
 using Core.Domain.Entities.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -20,8 +21,8 @@ public class BaseDbContext : DbContext
     protected IConfiguration Configuration { get; set; }
     public DbSet<AdditionalService> AdditionalServices { get; set; }
     public DbSet<Brand> Brands { get; set; }
-    public DbSet<Car> Cars { get; set; }
-    public DbSet<CarDamage> CarDamages { get; set; }
+    public DbSet<Vehicle> Cars { get; set; }
+    public DbSet<VehicleDamage> CarDamages { get; set; }
     public DbSet<Color> Colors { get; set; }
     public DbSet<CorporateCustomer> CorporateCustomers { get; set; }
     public DbSet<Customer> Customers { get; set; }
@@ -44,6 +45,7 @@ public class BaseDbContext : DbContext
     public DbSet<Airport> Airports { get; set; }
     public DbSet<Flight> Flights { get; set; }
     public DbSet<Seat> Seats { get; set; }
+    public DbSet<Passenger> Passengers { get; set; }
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
     {

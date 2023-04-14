@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Users.Commands.Update;
+namespace Modules.BaseApplication.Features.Users.Commands.Update;
 
 public class UpdatedUserResponse : IDto
 {

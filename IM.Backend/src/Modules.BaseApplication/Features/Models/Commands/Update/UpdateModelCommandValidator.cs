@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Models.Commands.Update;
+namespace Modules.BaseApplication.Features.Models.Commands.Update;
 
 public class UpdateModelCommandValidator : AbstractValidator<UpdateModelCommand>
 {

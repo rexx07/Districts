@@ -1,13 +1,13 @@
-using Application.Features.RentalBranches.Constants;
-using Application.Features.RentalBranches.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities;
 using Core.Domain.Enums;
 using MediatR;
-using static Application.Features.RentalBranches.Constants.RentalBranchesOperationClaims;
+using Modules.BaseApplication.Features.RentalBranches.Constants;
+using Modules.BaseApplication.Features.RentalBranches.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.RentalBranches.Constants.RentalBranchesOperationClaims;
 
-namespace Application.Features.RentalBranches.Commands.Update;
+namespace Modules.BaseApplication.Features.RentalBranches.Commands.Update;
 
 public class UpdateRentalBranchCommand : IRequest<UpdatedRentalBranchResponse>, ISecuredRequest
 {

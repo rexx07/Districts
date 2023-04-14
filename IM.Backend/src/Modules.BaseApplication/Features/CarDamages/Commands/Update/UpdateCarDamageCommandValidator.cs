@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.CarDamages.Commands.Update;
+namespace Modules.BaseApplication.Features.CarDamages.Commands.Update;
 
 public class UpdateCarDamageCommandValidator : AbstractValidator<UpdateCarDamageCommand>
 {

@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Fuels.Commands.Delete;
+namespace Modules.BaseApplication.Features.Fuels.Commands.Delete;
 
 public class DeletedFuelResponse : IDto
 {

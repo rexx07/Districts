@@ -1,13 +1,13 @@
-using Application.Features.AdditionalServices.Commands.Create;
-using Application.Features.AdditionalServices.Commands.Delete;
-using Application.Features.AdditionalServices.Commands.Update;
-using Application.Features.AdditionalServices.Queries.GetById;
-using Application.Features.AdditionalServices.Queries.GetList;
 using AutoMapper;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.AdditionalServices.Commands.Create;
+using Modules.BaseApplication.Features.AdditionalServices.Commands.Delete;
+using Modules.BaseApplication.Features.AdditionalServices.Commands.Update;
+using Modules.BaseApplication.Features.AdditionalServices.Queries.GetById;
+using Modules.BaseApplication.Features.AdditionalServices.Queries.GetList;
 
-namespace Application.Features.AdditionalServices.Profiles;
+namespace Modules.BaseApplication.Features.AdditionalServices.Profiles;
 
 public class MappingProfiles : Profile
 {

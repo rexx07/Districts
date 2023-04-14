@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Models.Commands.Create;
+namespace Modules.BaseApplication.Features.Models.Commands.Create;
 
 public class CreateModelCommandValidator : AbstractValidator<CreateModelCommand>
 {

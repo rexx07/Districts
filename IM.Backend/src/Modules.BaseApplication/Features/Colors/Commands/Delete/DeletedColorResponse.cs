@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Colors.Commands.Delete;
+namespace Modules.BaseApplication.Features.Colors.Commands.Delete;
 
 public class DeletedColorResponse : IDto
 {

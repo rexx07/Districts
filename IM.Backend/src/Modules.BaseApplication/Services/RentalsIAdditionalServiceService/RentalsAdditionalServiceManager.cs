@@ -1,6 +1,6 @@
 ﻿using Core.Domain.Entities;
 
-namespace Application.Services.RentalsIAdditionalServiceService;
+namespace Modules.BaseApplication.Services.RentalsIAdditionalServiceService;
 
 public class RentalsAdditionalServiceManager : IRentalsAdditionalServiceService
 {

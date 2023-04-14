@@ -1,6 +1,6 @@
-﻿using Application.Dtos;
+﻿using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Rentals.Queries.GetById;
+namespace Modules.BaseApplication.Features.Rentals.Queries.GetById;
 
 public class GetByIdRentalResponse : IDto
 {

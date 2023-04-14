@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.Transmissions.Commands.Create;
+namespace Modules.BaseApplication.Features.Transmissions.Commands.Create;
 
 public class CreateTransmissionCommandValidator : AbstractValidator<CreateTransmissionCommand>
 {

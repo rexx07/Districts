@@ -1,10 +1,10 @@
-﻿using Application.Services.ImageService;
-using CloudinaryDotNet;
+﻿using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Modules.BaseApplication.Services.ImageService;
 
-namespace Application.Adapters.ImageService;
+namespace Modules.BaseApplication.Adapters.ImageService;
 
 public class CloudinaryImageServiceAdapter : ImageServiceBase
 {

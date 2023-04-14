@@ -1,14 +1,14 @@
-using Application.Features.Invoices.Commands.Create;
-using Application.Features.Invoices.Commands.Delete;
-using Application.Features.Invoices.Commands.Update;
-using Application.Features.Invoices.Queries.GetList;
-using Application.Features.Invoices.Queries.GetListByCustomer;
-using Application.Features.Invoices.Queries.GetListByDates;
 using AutoMapper;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Invoices.Commands.Create;
+using Modules.BaseApplication.Features.Invoices.Commands.Delete;
+using Modules.BaseApplication.Features.Invoices.Commands.Update;
+using Modules.BaseApplication.Features.Invoices.Queries.GetList;
+using Modules.BaseApplication.Features.Invoices.Queries.GetListByCustomer;
+using Modules.BaseApplication.Features.Invoices.Queries.GetListByDates;
 
-namespace Application.Features.Invoices.Profiles;
+namespace Modules.BaseApplication.Features.Invoices.Profiles;
 
 public class MappingProfiles : Profile
 {

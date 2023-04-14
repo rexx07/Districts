@@ -1,12 +1,12 @@
-using Application.Features.OperationClaims.Constants;
-using Application.Features.OperationClaims.Rules;
-using Application.Pipelines.Authorization;
 using AutoMapper;
 using Core.Domain.Entities.Security;
 using MediatR;
-using static Application.Features.OperationClaims.Constants.OperationClaimsOperationClaims;
+using Modules.BaseApplication.Features.OperationClaims.Constants;
+using Modules.BaseApplication.Features.OperationClaims.Rules;
+using Modules.BaseApplication.Pipelines.Authorization;
+using static Modules.BaseApplication.Features.OperationClaims.Constants.OperationClaimsOperationClaims;
 
-namespace Application.Features.OperationClaims.Commands.Delete;
+namespace Modules.BaseApplication.Features.OperationClaims.Commands.Delete;
 
 public class DeleteOperationClaimCommand : IRequest<DeletedOperationClaimResponse>, ISecuredRequest
 {

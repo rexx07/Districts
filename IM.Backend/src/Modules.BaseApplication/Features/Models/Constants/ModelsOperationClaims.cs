@@ -1,4 +1,4 @@
-﻿namespace Application.Features.Models.Constants;
+﻿namespace Modules.BaseApplication.Features.Models.Constants;
 
 public static class ModelsOperationClaims
 {

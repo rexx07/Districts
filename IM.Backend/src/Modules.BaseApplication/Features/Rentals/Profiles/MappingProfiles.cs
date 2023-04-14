@@ -1,14 +1,14 @@
-﻿using Application.Features.Rentals.Commands.Create;
-using Application.Features.Rentals.Commands.Delete;
-using Application.Features.Rentals.Commands.PickUp;
-using Application.Features.Rentals.Commands.Update;
-using Application.Features.Rentals.Queries.GetById;
-using Application.Features.Rentals.Queries.GetList;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Rentals.Commands.Create;
+using Modules.BaseApplication.Features.Rentals.Commands.Delete;
+using Modules.BaseApplication.Features.Rentals.Commands.PickUp;
+using Modules.BaseApplication.Features.Rentals.Commands.Update;
+using Modules.BaseApplication.Features.Rentals.Queries.GetById;
+using Modules.BaseApplication.Features.Rentals.Queries.GetList;
 
-namespace Application.Features.Rentals.Profiles;
+namespace Modules.BaseApplication.Features.Rentals.Profiles;
 
 public class MappingProfiles : Profile
 {
@@ -23,8 +23,8 @@ public class MappingProfiles : Profile
         CreateMap<Rental, GetByIdRentalResponse>();
         CreateMap<Rental, GetListRentalListItemDto>()
             .ForMember(destinationMember: r => r.CarModelBrandName,
-                       memberOptions: opt => opt.MapFrom(r => r.Car.Model.Brand.Name))
-            .ForMember(destinationMember: r => r.CarModelName, memberOptions: opt => opt.MapFrom(r => r.Car.Model.Name))
+                       memberOptions: opt => opt.MapFrom(r => r.Vehicle.Model.Brand.Name))
+            .ForMember(destinationMember: r => r.CarModelName, memberOptions: opt => opt.MapFrom(r => r.Vehicle.Model.Name))
             .ForMember(
                 destinationMember: r => r.CustomerFullName,
                 memberOptions: opt =>

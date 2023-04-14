@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.IndividualCustomers.Commands.Delete;
+namespace Modules.BaseApplication.Features.IndividualCustomers.Commands.Delete;
 
 public class DeletedIndividualCustomerResponse : IDto
 {

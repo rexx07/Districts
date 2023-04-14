@@ -1,9 +1,9 @@
-using Application.Features.FindeksCreditRates.Rules;
 using AutoMapper;
 using Core.Domain.Entities;
 using MediatR;
+using Modules.BaseApplication.Features.FindeksCreditRates.Rules;
 
-namespace Application.Features.FindeksCreditRates.Commands.Update;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Commands.Update;
 
 public class UpdateFindeksCreditRateCommand : IRequest<UpdatedFindeksCreditRateResponse>
 {

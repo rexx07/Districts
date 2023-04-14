@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.Users.Commands.Delete;
+namespace Modules.BaseApplication.Features.Users.Commands.Delete;
 
 public class DeletedUserResponse : IDto
 {

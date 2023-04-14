@@ -1,14 +1,13 @@
-﻿using Application.Features.Colors.Commands.Create;
-using Application.Features.Colors.Commands.Delete;
-using Application.Features.Colors.Commands.Update;
-using Application.Features.Colors.Queries.GetById;
-using Application.Features.Colors.Queries.GetList;
-using AutoMapper;
-using Core.Domain.Entities;
+﻿using AutoMapper;
 using Core.Domain.Entities.Land;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.Colors.Commands.Create;
+using Modules.BaseApplication.Features.Colors.Commands.Delete;
+using Modules.BaseApplication.Features.Colors.Commands.Update;
+using Modules.BaseApplication.Features.Colors.Queries.GetById;
+using Modules.BaseApplication.Features.Colors.Queries.GetList;
 
-namespace Application.Features.Colors.Profiles;
+namespace Modules.BaseApplication.Features.Colors.Profiles;
 
 public class MappingProfiles : Profile
 {

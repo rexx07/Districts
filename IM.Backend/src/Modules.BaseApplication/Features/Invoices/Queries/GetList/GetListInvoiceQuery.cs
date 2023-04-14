@@ -4,7 +4,7 @@ using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using MediatR;
 
-namespace Application.Features.Invoices.Queries.GetList;
+namespace Modules.BaseApplication.Features.Invoices.Queries.GetList;
 
 public class GetListInvoiceQuery : IRequest<GetListResponse<GetListInvoiceListItemDto>>
 {

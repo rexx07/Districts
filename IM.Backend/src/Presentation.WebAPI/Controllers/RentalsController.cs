@@ -1,12 +1,12 @@
-﻿using Application.Features.Rentals.Commands.Create;
-using Application.Features.Rentals.Commands.Delete;
-using Application.Features.Rentals.Commands.PickUp;
-using Application.Features.Rentals.Commands.Update;
-using Application.Features.Rentals.Queries.GetById;
-using Application.Features.Rentals.Queries.GetList;
-using Core.Infrastructure.Persistence.Paging;
+﻿using Core.Infrastructure.Persistence.Paging;
 using Core.Infrastructure.Requests;
 using Microsoft.AspNetCore.Mvc;
+using Modules.BaseApplication.Features.Rentals.Commands.Create;
+using Modules.BaseApplication.Features.Rentals.Commands.Delete;
+using Modules.BaseApplication.Features.Rentals.Commands.PickUp;
+using Modules.BaseApplication.Features.Rentals.Commands.Update;
+using Modules.BaseApplication.Features.Rentals.Queries.GetById;
+using Modules.BaseApplication.Features.Rentals.Queries.GetList;
 
 namespace Presentation.WebAPI.Controllers;
 

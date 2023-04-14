@@ -6,7 +6,7 @@ using Core.Infrastructure.Security.EmailAuthenticator;
 using Core.Infrastructure.Security.OtpAuthenticator;
 using MimeKit;
 
-namespace Application.Services.AuthenticatorService;
+namespace Modules.BaseApplication.Services.AuthenticatorService;
 
 public class AuthenticatorManager : IAuthenticatorService
 {

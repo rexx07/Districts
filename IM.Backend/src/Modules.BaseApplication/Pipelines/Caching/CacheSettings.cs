@@ -1,4 +1,4 @@
-﻿namespace Application.Pipelines.Caching;
+﻿namespace Modules.BaseApplication.Pipelines.Caching;
 
 public class CacheSettings
 {

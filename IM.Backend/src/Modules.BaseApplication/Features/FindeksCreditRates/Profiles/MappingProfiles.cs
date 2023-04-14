@@ -1,16 +1,16 @@
-using Application.Features.CorporateCustomers.Queries.GetByCustomerId;
-using Application.Features.FindeksCreditRates.Commands.Create;
-using Application.Features.FindeksCreditRates.Commands.Delete;
-using Application.Features.FindeksCreditRates.Commands.Update;
-using Application.Features.FindeksCreditRates.Commands.UpdateByUserIdFromService;
-using Application.Features.FindeksCreditRates.Commands.UpdateFromService;
-using Application.Features.FindeksCreditRates.Queries.GetByIdFindeksCreditRate;
-using Application.Features.FindeksCreditRates.Queries.GetListFindeksCreditRate;
 using AutoMapper;
 using Core.Domain.Entities;
 using Core.Infrastructure.Persistence.Paging;
+using Modules.BaseApplication.Features.CorporateCustomers.Queries.GetByCustomerId;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.Create;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.Delete;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.Update;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.UpdateByUserIdFromService;
+using Modules.BaseApplication.Features.FindeksCreditRates.Commands.UpdateFromService;
+using Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetByIdFindeksCreditRate;
+using Modules.BaseApplication.Features.FindeksCreditRates.Queries.GetListFindeksCreditRate;
 
-namespace Application.Features.FindeksCreditRates.Profiles;
+namespace Modules.BaseApplication.Features.FindeksCreditRates.Profiles;
 
 public class MappingProfiles : Profile
 {

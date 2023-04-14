@@ -1,6 +1,6 @@
-using Application.Dtos;
+using Modules.BaseApplication.Dtos;
 
-namespace Application.Features.UserOperationClaims.Commands.Delete;
+namespace Modules.BaseApplication.Features.UserOperationClaims.Commands.Delete;
 
 public class DeletedUserOperationClaimResponse : IDto
 {
